@@ -1,10 +1,26 @@
 const path = require('path');
+const createCompiler = require("@storybook/addon-docs/mdx-compiler-plugin");
 
 module.exports = ({ config }) => ({
   ...config,
   module: {
     ...config.module,
     rules: [
+      {
+        test: /\.(stories|story)\.mdx$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+          },
+          {
+            loader: "@mdx-js/loader",
+            options: {
+              compilers: [createCompiler({})]
+            }
+          }
+        ]
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

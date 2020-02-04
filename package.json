@@ -9,8 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "lint": "eslint --ext js --ext jsx src",
-    "build": "rollup -c && build-storybook -c .storybook -o public",
+    "build": "rollup -c && build-storybook -c .storybook -o public --docs",
     "start": "start-storybook"
   },
   "devDependencies": {
@@ -20,6 +19,7 @@
     "@babel/preset-react": "^7.8.3",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@storybook/addon-docs": "^5.3.11",
     "@storybook/channels": "^5.3.9",
     "@storybook/react": "5.3.10",
     "autoprefixer": "^9.7.4",
@@ -41,6 +41,7 @@
     "postcss-import-alias-resolver": "^0.1.1",
     "postcss-math": "^0.0.10",
     "postcss-reporter": "^6.0.1",
+    "react-is": "^16.12.0",
     "rollup": "^1.30.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-filesize": "^6.2.1",

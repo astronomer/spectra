@@ -1,9 +1,0 @@
-pipeline:
-  # lint
-  lint:
-    image: node
-    commands:
-      - yarn install --silent
-      - yarn lint
-    when:
-      event: push
