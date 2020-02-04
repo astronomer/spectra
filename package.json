@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c && build-storybook -c .storybook -o public --docs",
+    "build": "rollup -c && build-storybook -o public --docs",
     "start": "start-storybook"
   },
   "devDependencies": {
