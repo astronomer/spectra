@@ -92,8 +92,3 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
-
-# Build Files
-public/
-dist/
-build/
