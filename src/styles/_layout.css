@@ -1,0 +1,16 @@
+:root {
+  --sidebar-width: 250px;
+  --max-line-length: 38rem;
+  --radius-l: 10px;
+  --radius-m: 6px;
+  --radius-s: 3px;
+  --radius-btn: 0.375em;
+}
+
+@custom-media --min-l-viewport (min-width: 1130px);
+@custom-media --min-m-viewport (min-width: 900px);
+@custom-media --min-s-viewport (min-width: 768px);
+
+@custom-media --max-l-viewport (max-width: 1130px);
+@custom-media --max-m-viewport (max-width: 900px);
+@custom-media --max-s-viewport (max-width: 768px);

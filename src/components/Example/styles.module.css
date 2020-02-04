@@ -1,0 +1,6 @@
+@import 'styles/_color.css';
+
+.example {
+  background-color: var(--purple10);
+  color: var(--white10);
+}

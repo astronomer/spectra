@@ -1,0 +1,26 @@
+/* Tooltip Styling */
+@import '~tippy.js/dist/tippy.css';
+@import '~tippy.js/animations/shift-away.css';
+
+/* Custom theme overrides */
+.tippy-tooltip.astro-theme {
+  $tooltipBg: var(--purple08);
+  color: #fff;
+  background-color: $tooltipBg;
+
+  &[data-placement^='top'] .tippy-arrow {
+    border-top-color: $tooltipBg;
+  }
+
+  &[data-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: $tooltipBg;
+  }
+
+  &[data-placement^='left'] .tippy-arrow {
+    border-left-color: $tooltipBg;
+  }
+
+  &[data-placement^='right'] .tippy-arrow {
+    border-right-color: $tooltipBg;
+  }
+}
