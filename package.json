@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c && build-storybook -o public --docs",
+    "build": "rollup -c",
     "start": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
     "test": "jest -u"

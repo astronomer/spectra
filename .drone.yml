@@ -22,13 +22,3 @@ pipeline:
       - yarn test
     when:
       event: push
-
-  # notify:
-  alert:
-    image: plugins/slack
-    secrets: [ slack_webhook ]
-    channel: orbit-ui
-    when:
-      event: push
-      status: [ success, failure ]
-      branch: [ master ]

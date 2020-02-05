@@ -92,3 +92,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Folders
+public/
+dist/
