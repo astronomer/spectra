@@ -1,0 +1,34 @@
+pipeline:
+  # run install
+  install:
+    image: node
+    commands:
+      - yarn install --silent
+    when:
+      event: push
+
+  # run lint
+  lint:
+    image: node
+    commands:
+      - yarn lint
+    when:
+      event: push
+
+  # jest
+  test:
+    image: node
+    commands:
+      - yarn test
+    when:
+      event: push
+
+  # notify:
+  alert:
+    image: plugins/slack
+    secrets: [ slack_webhook ]
+    channel: orbit-ui
+    when:
+      event: push
+      status: [ success, failure ]
+      branch: [ master ]

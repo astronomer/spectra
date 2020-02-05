@@ -2,10 +2,12 @@ module.exports = {
   root: true,
   extends: 'eslint-config-airbnb',
   parser: 'babel-eslint',
+  plugins: ['jest'],
   env: {
     'browser': true,
     'node': true,
     'es6': true,
+    'jest': true
   },
   settings: {
     'import/resolver': {
