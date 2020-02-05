@@ -9,20 +9,34 @@
   </a>
 </p>
 
-## Astro Design System
+# Astro Design System
 
 A design system for The Astronomer Platform, a managed service to run Apache Airflow on Kubernetes.
 <br />Built with React, exports to CommonJS and ES Modules.
 
-## Installation
+## Add to your project
+
+```bash
+yarn add @astronomer/design-system
+```
+
+```JS
+import { Example } from "@astronomer/design-system";
+
+render () {
+  return (
+    <Example />
+  );
+}
+```
+
+### Develop
 
 Clone the repository and use the package manager [yarn](https://yarnpkg.com) to install the project's dependancies.
 
 ```bash
 yarn install
 ```
-
-## Development
 
 Open Storybook at `http://localhost:51731/`.
 
