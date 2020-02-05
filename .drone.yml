@@ -22,16 +22,3 @@ pipeline:
       - yarn test
     when:
       event: push
-
-  # release
-  release:
-    image: node
-    commands:
-      - yarn release
-    environment:
-      GITHUB_TOKEN: $${gh_token}
-      NPM_TOKEN: $${npm_token}
-    secrets: [ gh_token, npm_token ]
-    when:
-      event: push
-      branch: [ master ]
