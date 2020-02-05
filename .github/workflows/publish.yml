@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+
       - uses: actions/setup-node@master
         with:
           node-version: 12
@@ -16,13 +17,22 @@ jobs:
           scope: '<@OWNER>'
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: yarn install
+
+      - name: Install Dependencies
+        run: yarn install
+
       - name: Autoscope package
         uses: khaazz/action-autoscope@master
-      - run: yarn version --patch
-      - run: yarn build
+
       - name: Configure .npmrc
         run: echo registry=https://npm.pkg.github.com/<OWNER> >> .npmrc
+
+      - name: Bump version (patch)
+        run: yarn version --patch --no-git-tag-version --no-commit-hooks
+
+      - name: Build bundle
+        run: yarn build
+
       - name: Publish
         run: npm publish
         env:
