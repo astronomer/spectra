@@ -5,6 +5,13 @@ on:
     branches:
       - master
 jobs:
+  # create .npmrc
+  create-npmrc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
+
   # build bundle
   build:
     runs-on: ubuntu-latest
@@ -14,7 +21,7 @@ jobs:
         with:
           node-version: 12.0.0
       - run: yarn
-      - run: yarn pkg-patch
+      - run: npm version patch
       - run: yarn build
 
   # Publish package
@@ -25,11 +32,7 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 12.0.0
-      - id: publish
-        uses: JS-DevTools/npm-publish@v1
+      - uses: jgierer12/npm-auth-gpr@v1
         with:
-          token: ${{ secrets.NPM_TOKEN }}
-          registry: https://npm.pkg.github.com
-      - if: steps.publish.type != 'none'
-        run: |
-          echo "Version changed: ${{ steps.publish.old-version }} => ${{ steps.publish.version }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm publish
