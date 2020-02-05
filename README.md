@@ -1,6 +1,6 @@
 ## Astronomer Design System
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/astronomer/design-system)
+[![](https://img.shields.io/github/package-json/v/astronomer/design-system)](https://github.com/astronomer/design-system/packages/121505)
 
 A design system for The Astronomer Platform, a managed service to run Apache Airflow on Kubernetes.
 
