@@ -8595,11 +8595,6 @@ minipass@^3.0.0, minipass@^3.1.1:
   dependencies:
     yallist "^4.0.0"
 
-minor@^1.2.0:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/minor/-/minor-1.2.3.tgz#4822901993d8baac56bbbe32c5333217b6f9e4ef"
-  integrity sha1-SCKQGZPYuqxWu74yxTMyF7b55O8=
-
 mississippi@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/mississippi/-/mississippi-3.0.0.tgz#ea0a3291f97e0b5e8776b363d5f0a12d94c67022"
@@ -9372,13 +9367,6 @@ pkg-up@2.0.0:
   integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
   dependencies:
     find-up "^2.1.0"
-
-pkg-up@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-3.1.0.tgz#100ec235cc150e4fd42519412596a28512a0def5"
-  integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
-  dependencies:
-    find-up "^3.0.0"
 
 pleeease-filters@^4.0.0:
   version "4.0.0"
@@ -10928,13 +10916,6 @@ readdirp@^2.2.1:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
-
-readjson@^1.1.0:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/readjson/-/readjson-1.1.4.tgz#89501f648453dcda9b15399b3fb10c38249662c7"
-  integrity sha512-H4dRk2S67w3HtE1apnw5wlHpN9qkJ0pen0AcEvyAfnrPfskZIyUOYLXpfN6olDQZI+eUlxg0Yo4lJ2bymujOUA==
-  dependencies:
-    try-catch "^2.0.0"
 
 realpath-native@^1.1.0:
   version "1.1.0"
@@ -12793,11 +12774,6 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.5.tgz#b8b639cefad7d0bb2abd37d433ff8293efa5f406"
   integrity sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
 
-try-catch@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/try-catch/-/try-catch-2.0.1.tgz#a35d354187c422f291a0bcfd9eb77e3a4f90c1e5"
-  integrity sha512-LsOrmObN/2WdM+y2xG+t16vhYrQsnV8wftXIcIOWZhQcBJvKGYuamJGwnU98A7Jxs2oZNkJztXlphEOoA0DWqg==
-
 ts-dedent@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-1.1.1.tgz#68fad040d7dbd53a90f545b450702340e17d18f3"
@@ -13284,17 +13260,6 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-version-io@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/version-io/-/version-io-3.0.0.tgz#84b2289610ecf73d3d3639f3684075a0115ef114"
-  integrity sha512-Wk6kycRWtMeCiDeUPprh7Kfi7FRZ32NgKw2WAwy1iH4i7z5jGM+8OoAFnLnO6dOHFrxHnHIGlTBTyqsGshiamg==
-  dependencies:
-    minor "^1.2.0"
-    pkg-up "^3.1.0"
-    readjson "^1.1.0"
-    try-catch "^2.0.0"
-    writejson "^2.0.1"
-
 vfile-location@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/vfile-location/-/vfile-location-2.0.6.tgz#8a274f39411b8719ea5728802e10d9e0dff1519e"
@@ -13659,13 +13624,6 @@ write@1.0.3:
   integrity sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
   dependencies:
     mkdirp "^0.5.1"
-
-writejson@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/writejson/-/writejson-2.0.1.tgz#a977e57ead480a9a7641410e27d1afa58ebaf90b"
-  integrity sha512-L8sjHabAAph4TXKsS1Q7CPUBpuheIACbUIG6QHVdPgTPLNKmP/2bc+rGdQvu14NZrEj8YOuIyPJuqonf3qyCCg==
-  dependencies:
-    try-catch "^2.0.0"
 
 ws@^7.0.0:
   version "7.2.1"
