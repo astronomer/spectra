@@ -1,10 +1,10 @@
 {
   "name": "@astronomer/design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/astronomer/design-system/",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/astronomer/design-system.git"
+    "type": "git",
+    "url": "https://github.com/astronomer/design-system.git"
   },
   "main": "dist/bundle.js",
   "style": "dist/bundle.css",
@@ -15,6 +15,10 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
+    "pkg-publish": "npm publish",
+    "pkg-major": "version major",
+    "pkg-minor": "version minor",
+    "pkg-patch": "version patch",
     "build": "rollup -c",
     "start": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
@@ -84,9 +88,5 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css)$": "identity-obj-proxy"
     }
-  },
-  "release": {
-    "branches": ["master"],
-    "repositoryUrl": "https://github.com/astronomer/design-system"
   }
 }

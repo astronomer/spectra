@@ -5,6 +5,25 @@ on:
     branches:
       - master
 jobs:
+  # create .npmrc
+  create-npmrc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
+
+  # update patch version (only auto push patches)
+  bump-version:
+    runs-on: ubuntu-latest
+    id: pkg-patch
+    steps:
+      - uses: actions/checkout@master
+        uses: anothrNick/github-tag-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: patch
+          WITH_V: true
+
   # build bundle
   build:
     runs-on: ubuntu-latest
@@ -13,20 +32,16 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 12.0.0
-      - run: yarn
       - run: yarn build
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
-  # Run auto semantic version
+  # run auto release
   tagged-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          draft: true
-          prerelease: true
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: ${{ pkg-patch.outputs.new_tag }}
           files: |
             *.jar
 
@@ -38,6 +53,4 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 12.0.0
-      - uses: geoblink/publish-to-npm@v1.0.2
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - run: yarn pkg-publish
