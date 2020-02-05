@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 12.0.0
       - run: yarn
+      - run: yarn version patch
       - run: yarn build
       - uses: jgierer12/npm-auth-gpr@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm version patch
       - run: npm publish
