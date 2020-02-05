@@ -5,25 +5,25 @@ on:
     branches:
       - master
 jobs:
-  # create .npmrc
-  create-npmrc:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-
-  # build bundle
-  publish:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 12.0.0
-      - run: yarn
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+          scope: '<@OWNER>'
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: yarn install
+      - name: Autoscope package
+        uses: khaazz/action-autoscope@master
       - run: yarn version --patch
       - run: yarn build
-      - uses: jgierer12/npm-auth-gpr@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - run: yarn publish
+      - name: Configure .npmrc
+        run: echo registry=https://npm.pkg.github.com/<OWNER> >> .npmrc
+      - name: Publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
