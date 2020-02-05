@@ -1,13 +1,12 @@
 {
-  "name": "design-system",
-  "version": "1.0.0",
+  "name": "@astronomer/design-system",
+  "version": "0.0.1",
+  "homepage": "https://github.com/astronomer/design-system/",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/astronomer/design-system.git"
   },
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.js",
+  "main": "dist/bundle.js",
   "style": "dist/bundle.css",
   "files": [
     "dist"
@@ -19,9 +18,7 @@
     "build": "rollup -c",
     "start": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
-    "test": "jest -u",
-    "release": "semantic-release",
-    "release-dry": "semantic-release --dry-run"
+    "test": "jest -u"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -66,7 +63,6 @@
     "rollup-plugin-local-resolve": "^1.0.7",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.5",
-    "semantic-release": "^17.0.2",
     "source-map-loader": "^0.2.4",
     "story-sorter": "gist:0cdded150eb533938b502cc958ee529a",
     "style-loader": "^1.1.3",
@@ -78,7 +74,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "dependencies": {
+  "bundledDependencies": {
     "react-datepicker": "^2.11.0",
     "reset-css": "^5.0.1",
     "tippy.js": "^5.2.0"
