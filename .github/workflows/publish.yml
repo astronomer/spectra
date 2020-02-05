@@ -18,14 +18,14 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Install Dependencies
-        run: yarn install
-
       - name: Autoscope package
         uses: khaazz/action-autoscope@master
 
       - name: Configure .npmrc
-        run: echo registry=https://npm.pkg.github.com/<OWNER> >> .npmrc
+        run: echo "registry=https://npm.pkg.github.com/<OWNER>" >> ~/.npmrc
+
+      - name: Install Dependencies
+        run: yarn install
 
       - name: Bump version (patch)
         run: yarn version --patch --no-git-tag-version --no-commit-hooks
