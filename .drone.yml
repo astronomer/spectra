@@ -27,8 +27,7 @@ pipeline:
   release:
     image: node
     commands:
-      # NOTE: is a dry run - update to "release" to go live & publish
-      - yarn release-dry
+      - yarn release
     environment:
       GITHUB_TOKEN: $${gh_token}
       NPM_TOKEN: $${npm_token}
