@@ -10,21 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - run: npm version patch
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
   # build bundle
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-          node-version: 12.0.0
-      - run: yarn
-      - run: npm version patch
-      - run: yarn build
-
-  # Publish package
   publish:
     runs-on: ubuntu-latest
     steps:
@@ -32,6 +21,8 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 12.0.0
+      - run: yarn
+      - run: yarn build
       - uses: jgierer12/npm-auth-gpr@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
