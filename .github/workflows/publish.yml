@@ -15,10 +15,10 @@ jobs:
   # update patch version (only auto push patches)
   bump-version:
     runs-on: ubuntu-latest
-    id: pkg-patch
     steps:
       - uses: actions/checkout@master
       - uses: anothrNick/github-tag-action@master
+        id: pkg-patch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
@@ -41,7 +41,7 @@ jobs:
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: ${{ pkg-patch.outputs.new_tag }}
+          automatic_release_tag: ${{ steps.pkg-patch.outputs.new_tag }}
           files: |
             *.jar
 
