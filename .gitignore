@@ -94,5 +94,3 @@ typings/
 .dynamodb/
 
 # Folders
-public/
-dist/
