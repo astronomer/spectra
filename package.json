@@ -12,7 +12,7 @@
     "build": "rollup -c && build-storybook -o public --docs",
     "start": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
-    "test": "jest"
+    "test": "jest -u"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
