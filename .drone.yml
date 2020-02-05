@@ -22,3 +22,13 @@ pipeline:
       - yarn test
     when:
       event: push
+
+  # release
+  test:
+    image: node
+    commands:
+      # NOTE: is a dry run - update to "release" to go live & publish
+      - yarn release-dry
+    when:
+      event: push
+      branch: [ master ]
