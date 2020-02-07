@@ -1165,36 +1165,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 });
 
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css = ":root {\n  /* Typefaces */\n\n  /* Desktop Font Sizes */\n\n  /* Mobile Font Sizes */\n\n  /* Whites */\n\n  /* Grays */\n\n  /* Purples (blacks) */\n\n  /* Blues */\n\n  /* Greens */\n\n  /* Golds */\n\n  /* Reds */\n\n  /* Brands */\n\n  /* Semantic color */\n\n  /* Shadow */\n\n  /* Radius */\n}\n\n.styles-module_example__5eD3K {\n  background-color: #302c43;\n  color: #fffefd;\n}\n";
 var s = {"example":"styles-module_example__5eD3K"};
-styleInject(css);
 
 var Example = function Example(_ref) {
   var name = _ref.name;
