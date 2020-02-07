@@ -10,7 +10,7 @@ import localResolve from 'rollup-plugin-local-resolve';
 import pkg from './package.json';
 
 const INPUT_FILE_PATH = 'src/index.jsx';
-const OUTPUT_NAME = 'design-system';
+const OUTPUT_NAME = 'spectra';
 
 const GLOBALS = {
   react: 'React',
