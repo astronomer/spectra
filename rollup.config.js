@@ -20,7 +20,6 @@ const GLOBALS = {
 const PLUGINS = [
   postcss({
     modules: true,
-    namedExports: true,
     plugins: [
       autoprefixer,
     ],
