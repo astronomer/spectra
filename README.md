@@ -1,6 +1,6 @@
-## Astronomer Design System
+## Astronomer Spectra 🌈
 
-[![](https://img.shields.io/github/package-json/v/astronomer/design-system)](https://github.com/astronomer/design-system/packages/121505)
+[![](https://img.shields.io/github/package-json/v/astronomer/spectra)](https://github.com/astronomer/spectra/packages/121505)
 
 A design system for The Astronomer Platform, a managed service to run Apache Airflow on Kubernetes.
 
@@ -8,11 +8,11 @@ A design system for The Astronomer Platform, a managed service to run Apache Air
 
 
 ```bash
-yarn add @astronomer/design-system@latest
+yarn add @astronomer/spectra@latest
 ```
 
 ```JSX
-import { Example } from "@astronomer/design-system";
+import { Example } from "@astronomer/spectra";
 
 render () {
   return (
