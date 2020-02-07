@@ -1,10 +1,10 @@
 {
-  "name": "@astronomer/design-system",
-  "version": "0.0.5",
-  "homepage": "https://github.com/astronomer/design-system",
+  "name": "@astronomer/spectra",
+  "version": "0.0.0",
+  "homepage": "https://github.com/astronomer/spectra",
   "repository": {
     "type": "git",
-    "url": "https://github.com/astronomer/design-system.git"
+    "url": "https://github.com/astronomer/spectra.git"
   },
   "main": "dist/bundle.js",
   "style": "dist/bundle.css",
