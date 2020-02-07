@@ -1,4 +1,21 @@
 :root {
+  /* Typefaces */
+  --font-sans: 'GoodSans', 'SF Pro', 'Open Sans', sans;
+  --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+
+  /* Desktop Font Sizes */
+  --font-xl: 2.25rem;
+  --font-l: 1.75rem;
+  --font-ml: 1.375rem;
+  --font-m: 1rem;
+  --font-s: 0.85rem;
+  --font-xs: 0.65rem;
+
+  /* Mobile Font Sizes */
+  --font-mobile-xl: 1.6rem;
+  --font-mobile-l: 1.2rem;
+  --font-mobile-ml: 1rem;
+
   /* Whites */
   --white09: #fff;
   --white10: #fffefd;
@@ -102,4 +119,10 @@
     0 2px 4px color(var(--purple10) a(0.03)),
     0 4px 6px color(var(--purple10) a(0.03)),
     0 8px 8px color(var(--purple10) a(0.03));
+
+  /* Radius */
+  --radius-l: 10px;
+  --radius-m: 6px;
+  --radius-s: 3px;
+  --radius-btn: 0.375em;
 }

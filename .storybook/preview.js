@@ -1,4 +1,4 @@
-import '../src/styles/root.css';
+import '../src/styles/global.css';
 
 import { addParameters } from '@storybook/react';
 import { addons } from '@storybook/addons';

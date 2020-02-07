@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import filesize from 'rollup-plugin-filesize';
+import copy from 'rollup-plugin-copy';
 import autoprefixer from 'autoprefixer';
 import localResolve from 'rollup-plugin-local-resolve';
 
@@ -18,7 +19,8 @@ const GLOBALS = {
 
 const PLUGINS = [
   postcss({
-    extract: true,
+    modules: true,
+    namedExports: true,
     plugins: [
       autoprefixer,
     ],
@@ -32,6 +34,13 @@ const PLUGINS = [
   }),
   commonjs(),
   filesize(),
+  copy({
+    targets: [
+      { src: 'src/styles/global.css', dest: 'dist/' },
+      { src: 'src/styles/variables.css', dest: 'dist/' },
+      { src: 'src/styles/mixins.css', dest: 'dist/' },
+    ],
+  }),
 ];
 
 const EXTERNAL = [

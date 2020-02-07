@@ -1,9 +1,7 @@
 @import '~reset-css';
 @import 'fonts/goodSans.css';
-@import '_color.css';
-@import '_type.css';
-@import '_layout.css';
-@import '_mixins.css';
+@import 'variables.css';
+@import 'mixins.css';
 
 @import 'vendor/recharts.css';
 @import 'vendor/resteps.css';
@@ -33,14 +31,6 @@ body {
   line-height: 1.5;
   color: var(--c-text-body);
   background-color: var(--white09);
-}
-
-/* App Root */
-
-#root {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 /* Type */
@@ -170,35 +160,6 @@ p {
   }
 }
 
-/* Grid */
-
-.grid {
-  display: block;
-  width: 100%;
-
-  @media (--min-l-viewport) {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-between;
-
-    &.stretch {
-      align-items: stretch
-    }
-  }
-}
-
-.column {
-  box-sizing: border-box;
-  flex: 1;
-}
-
-@media (--min-l-viewport) {
-
-  .halves .column { flex: 0 0 49%; }
-  .thirds .column { flex: 0 0 32%; }
-  .fourths .column { flex: 0 0 23.5%; }
-}
 /* Forms Reset */
 
 input[type=number]::-webkit-inner-spin-button,
@@ -212,59 +173,4 @@ input[type=number]::-webkit-outer-spin-button {
 ::selection {
   color: var(--white10);
   background: var(--blue10);
-}
-
-
-
-/* TEMP Utils - needs refactoring into more robust options  */
-.uMt1 {
-  margin-top: 0.5rem;
-}
-
-.uMt2 {
-  margin-top: 1rem;
-}
-
-.uMt3 {
-  margin-top: 1.5rem;
-}
-
-.uMt4 {
-  margin-top: 2rem;
-}
-
-.uMr1 {
-  margin-right: 0.5rem;
-}
-
-.uMr2 {
-  margin-right: 1rem;
-}
-
-.uMb1 {
-  margin-bottom: 0.5rem;
-}
-
-.uMb2 {
-  margin-bottom: 1rem;
-}
-
-.uMl1 {
-  margin-left: 0.5rem;
-}
-
-.uMl2 {
-  margin-left: 1rem;
-}
-
-.uTextLabel {
-  color: var(--c-text-label);
-}
-
-.uTextMuted {
-  color: var(--c-text-muted);
-}
-
-.uTextMono {
-  font-family: var(--font-mono);
 }

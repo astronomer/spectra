@@ -1,4 +1,4 @@
-@import 'styles/_color.css';
+@import 'styles/variables.css';
 
 .example {
   background-color: var(--purple10);
