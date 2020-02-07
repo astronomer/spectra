@@ -19,7 +19,7 @@ const GLOBALS = {
 
 const PLUGINS = [
   postcss({
-    modules: true,
+    extract: true,
     plugins: [
       autoprefixer,
     ],
