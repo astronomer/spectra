@@ -1,0 +1,19 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Checkbox from '.';
+
+<Meta title="Components|Checkbox" component={Checkbox} />
+
+# Checkbox
+<Preview>
+  <Story name="Default">
+    <Checkbox name="example" label="Example" />
+  </Story>
+  <Story name="Checked">
+    <Checkbox name="example-checked" label="Checked" isChecked />
+  </Story>
+  <Story name="Disabled">
+    <Checkbox name="example-disabled" label="Disabled" isDisabled />
+  </Story>
+</Preview>
+
+<Props of={Checkbox} />

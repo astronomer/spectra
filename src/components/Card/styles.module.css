@@ -1,0 +1,27 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.card {
+  border-radius: var(--radius-m);
+  border: solid 0.25rem var(--white10);
+  width: 100%;
+  background-color: var(--white10);
+}
+
+.cardHeader {
+  border-bottom: solid 2px var(--white11);
+  padding: 1rem 1rem 0.5rem;
+}
+
+.cardBody {
+  padding: 1rem;
+
+  &.noPadding {
+    padding: 0;
+  }
+}
+
+.cardFooter {
+  border-top: solid 2px var(--white11);
+  padding: 1rem 1rem 0.5rem;
+}

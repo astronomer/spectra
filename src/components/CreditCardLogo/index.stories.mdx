@@ -1,0 +1,25 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import CreditCardLogo from '.';
+
+<Meta title="Components|CreditCardLogo" component={CreditCardLogo} />
+
+# CreditCardLogo
+<Preview>
+  <Story name="Generic">
+    <CreditCardLogo />
+  </Story>
+  <Story name="American Express">
+    <CreditCardLogo brand="american_express" />
+  </Story>
+  <Story name="Visa">
+    <CreditCardLogo brand="visa" />
+  </Story>
+  <Story name="Mastercard">
+    <CreditCardLogo brand="mastercard" />
+  </Story>
+  <Story name="Discover">
+    <CreditCardLogo brand="discover" />
+  </Story>
+</Preview>
+
+<Props of={CreditCardLogo} />

@@ -1,6 +1,4 @@
-@import '_color.css';
-@import '_type.css';
-@import '_layout.css';
+@import 'variables.css';
 
 $btnBorderWidth: 0.125rem; /* 2px */
 
@@ -160,4 +158,16 @@ $btnBorderWidth: 0.125rem; /* 2px */
 @mixin helperText {
   font-size: 0.875rem;
   color: var(--c-text-muted);
+}
+
+@mixin visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
 }

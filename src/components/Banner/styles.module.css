@@ -1,0 +1,27 @@
+@import 'styles/variables.css';
+
+.container {
+  border: 1px solid transparent;
+  width: 100%;
+  color: var(--white10);
+  padding: 0.25rem 1rem;
+  font-size: var(--font-s);
+  text-align: center;
+
+  &.error {
+    background-color: var(--c-status-negative);
+  }
+
+  &.warning {
+    color: var(--purple11);
+    background-color: var(--c-status-warn);
+  }
+
+  &.info {
+    background-color: var(--c-status-neutral);
+  }
+
+  &.success {
+    background-color: var(--c-status-positive);
+  }
+}

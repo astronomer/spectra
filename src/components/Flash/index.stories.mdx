@@ -1,0 +1,42 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Flash from '.';
+
+<Meta title="Components|Flash" component={Flash} />
+
+# Flash
+#### Default (warning)
+<Preview>
+  <Story name="Default">
+    <Flash>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  </Story>
+</Preview>
+
+#### Error
+<Preview>
+  <Story name="Error">
+    <Flash type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  </Story>
+</Preview>
+
+#### Info
+<Preview>
+  <Story name="Info">
+    <Flash type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  </Story>
+</Preview>
+
+#### Success
+<Preview>
+  <Story name="Success">
+    <Flash type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  </Story>
+</Preview>
+
+#### Is Dismissable
+<Preview>
+  <Story name="Is Dissmissable">
+    <Flash dismissKey="warn123" isDismissable>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  </Story>
+</Preview>
+
+<Props of={Flash} />

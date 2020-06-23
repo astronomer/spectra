@@ -1,0 +1,33 @@
+@import 'styles/variables.css';
+
+.badge {
+  display: inline-block;
+  border-radius: var(--radius-s);
+  padding: 0.05rem 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--purple10);
+  background-color: color(var(--purple10) a(0.15));
+
+  &.error {
+    color: var(--c-status-negative);
+    background-color: color(var(--c-status-negative) a(0.15));
+  }
+
+  &.warning {
+    color: var(--c-status-warn);
+    background-color: color(var(--c-status-warn) a(0.15));
+  }
+
+  &.info {
+    color: var(--c-status-neutral);
+    background-color: color(var(--c-status-neutral) a(0.15));
+  }
+
+  &.success {
+    color: var(--c-status-positive);
+    background-color: color(var(--c-status-positive) a(0.15));
+  }
+}

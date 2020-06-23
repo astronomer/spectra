@@ -32,5 +32,5 @@ export default create({
   inputBorderRadius: 6,
 
   // Brand
-  brandTitle: 'Design System',
+  brandTitle: 'Spectra',
 });

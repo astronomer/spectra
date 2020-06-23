@@ -1,0 +1,19 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Dropdown from '.';
+
+<Meta title="Components|Dropdown" component={Dropdown} />
+
+# Dropdown
+<Preview>
+  <Story name="Default">
+    <div style={{ position: 'relative', height: '30vh' }}>
+      <Dropdown isOpen>
+        <a href="/">Account Settings</a>
+        <a href="/">Log Out</a>
+        <a href="/">System Admin</a>
+      </Dropdown>
+    </div>
+  </Story>
+</Preview>
+
+<Props of={Dropdown} />

@@ -1,0 +1,19 @@
+@import 'styles/variables.css';
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: var(--max-line-length);
+
+  & h3 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.actions {
+  margin: 1rem 0 2rem;
+}
+
+.footer {
+  text-align: left;
+}

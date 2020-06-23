@@ -1,6 +1,6 @@
 import '../src/styles/global.css';
 
-import { addParameters } from '@storybook/react';
+import { addParameters, addDecorator } from '@storybook/react';
 import { addons } from '@storybook/addons';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import storySorter from 'story-sorter';

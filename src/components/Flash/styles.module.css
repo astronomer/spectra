@@ -1,0 +1,80 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  width: 100%;
+  background-color: var(--white10);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-m);
+  font-size: var(--font-ml);
+
+  &.error {
+    color: var(--c-status-negative);
+    background-color: color(var(--c-status-negative) a(0.15));
+  }
+
+  &.warning {
+    color: var(--c-status-warn);
+    background-color: color(var(--c-status-warn) a(0.15));
+  }
+
+  &.info {
+    color: var(--c-status-neutral);
+    background-color: color(var(--c-status-neutral) a(0.15));
+  }
+
+  &.success {
+    color: var(--c-status-positive);
+    background-color: color(var(--c-status-positive) a(0.15));
+  }
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.content {
+  flex: 1;
+  font-size: var(--font-s);
+
+  & a {
+    color: currentColor;
+    text-decoration: underline;
+    font-weight: 500;
+
+    &:hover {
+      color: currentColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.closeBtn {
+  display: inline-block;
+  margin: 0 -0.5rem 0 0.5rem;
+  border-radius: var(--radius-btn);
+  border: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  line-height: 2rem;
+  text-align: center;
+  color: currentColor;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

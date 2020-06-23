@@ -1,0 +1,35 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Banner from '.';
+
+<Meta title="Components|Banner" component={Banner} />
+
+# Banner
+#### Default (Warning)
+<Preview>
+  <Story name="Default">
+    <Banner>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+  </Story>
+</Preview>
+
+#### Error
+<Preview>
+  <Story name="Error">
+    <Banner type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+  </Story>
+</Preview>
+
+#### Info
+<Preview>
+  <Story name="Info">
+    <Banner type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+  </Story>
+</Preview>
+
+#### Success
+<Preview>
+  <Story name="Success">
+    <Banner type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+  </Story>
+</Preview>
+
+<Props of={Banner} />

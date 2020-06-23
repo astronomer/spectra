@@ -1,0 +1,25 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Badge from '.';
+
+<Meta title="Components|Badge" component={Badge} />
+
+# Badge
+<Preview>
+  <Story name="Default">
+    <Badge text="Default" />
+  </Story>
+  <Story name="Error">
+    <Badge status="error" text="Error" />
+  </Story>
+  <Story name="Warning">
+    <Badge status="warning" text="Warning" />
+  </Story>
+  <Story name="Info">
+    <Badge status="info" text="Info" />
+  </Story>
+  <Story name="Success">
+    <Badge status="success" text="Success" />
+  </Story>
+</Preview>
+
+<Props of={Badge} />

@@ -1,0 +1,79 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FiInfo } from 'react-icons/fi';
+
+import Button from '.';
+
+<Meta title="Components|Button" component={Button} />
+
+# Button
+#### Default
+<Preview>
+  <Story name="Default">
+    <Button label="Click here" />
+  </Story>
+</Preview>
+
+#### Size variants
+<Preview>
+  <Story name="Small">
+    <Button label="Small" buttonSize="small" />
+  </Story>
+  <Story name="Medium">
+    <Button label="Medium" />
+  </Story>
+  <Story name="Large">
+    <Button label="Large" buttonSize="large" />
+  </Story>
+</Preview>
+
+#### Style variants (non destructive)
+<Preview>
+  <Story name="Primary">
+    <Button label="Primary" buttonStyle="primary" />
+  </Story>
+  <Story name="Primary Alt">
+    <Button label="Primary Alt" buttonStyle="primaryAlt" />
+  </Story>
+  <Story name="Secondary">
+    <Button label="Secondary" buttonStyle="secondary" />
+  </Story>
+  <Story name="Disabled">
+    <Button label="Disabled" isDisabled />
+  </Story>
+</Preview>
+
+#### Style variants (destructive)
+<Preview>
+  <Story name="Primary Destructive">
+    <Button label="Primary Destructive" buttonStyle="primaryDestructive" />
+  </Story>
+  <Story name="Secondary Destructive">
+    <Button label="Secondary Destructive" buttonStyle="secondaryDestructive" />
+  </Story>
+</Preview>
+
+#### Display variant
+<Preview>
+  <Story name="Block">
+    <Button label="Container spanning" displayBlock />
+  </Story>
+</Preview>
+
+#### Loading variant
+<Preview>
+  <Story name="Loading">
+    <Button label="In Flight" inFlight />
+  </Story>
+</Preview>
+
+#### Icon variant
+<Preview>
+  <Story name="Icon Left">
+    <Button label="Left Icon" iconLeft={FiInfo} />
+  </Story>
+  <Story name="Icon Right">
+    <Button label="Right Icon" iconRight={FiInfo} />
+  </Story>
+</Preview>
+
+<Props of={Button} />

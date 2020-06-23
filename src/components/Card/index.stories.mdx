@@ -1,0 +1,54 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FiInfo } from 'react-icons/fi';
+
+import Card from '.';
+
+<Meta title="Components|Card" component={Card} />
+
+# Card
+#### Default
+<Preview>
+  <Story name="Default">
+    <Card>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </Card>
+  </Story>
+</Preview>
+
+#### With header
+<Preview>
+  <Story name="with Header">
+    <Card header="Lorem ipsum dolor sit amet">
+      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </Card>
+  </Story>
+</Preview>
+
+#### With footer
+<Preview>
+  <Story name="with Footer">
+    <Card footer="Lorem ipsum dolor sit amet">
+      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </Card>
+  </Story>
+</Preview>
+
+#### With header & footer
+<Preview>
+  <Story name="with Header and Footer">
+    <Card header="Lorem ipsum dolor sit amet" footer="Lorem ipsum dolor sit amet">
+      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </Card>
+  </Story>
+</Preview>
+
+#### No padding
+<Preview>
+  <Story name="No Padding">
+    <Card noPadding>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </Card>
+  </Story>
+</Preview>
+
+<Props of={Card} />

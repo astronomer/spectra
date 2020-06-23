@@ -1,10 +1,9 @@
 {
+  "plugins": ["react-docgen"],
   "env": {
     "test": {
       "presets": [
-        [
-          "@babel/preset-env"
-        ],
+        ["@babel/preset-env"],
         "@babel/preset-react"
       ]
     }

@@ -1,0 +1,71 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+$input-dims: 1.25rem; /* width & height */
+
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* Visusally hidden inputs but still accessible */
+.input {
+  @include visuallyHidden;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border: solid 2px var(--c-input-border-color);
+  border-radius: var(--radius-m);
+  width: $input-dims;
+  height: $input-dims;
+  background-color: var(--white12);
+  transition: border-color 0.25s ease-in-out;
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-width: 0 0 3px 3px;
+    border-style: solid;
+    border-color: var(--c-input-border-color-focused);
+    width: 10px;
+    height: 5px;
+    content: '';
+    transform: rotate(-45deg) scale(0);
+    transform-origin: 50%;
+    transition: transform 0.25s ease-in-out;
+    will-change: transform;
+  }
+}
+
+.input:disabled + .checkbox {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.input.checked + .checkbox {
+  border-color: var(--c-input-border-color-focused);
+  background-color: var(--c-input-bg-color-focused);
+
+  &::before {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+.input:enabled:focus + .checkbox {
+  box-shadow: 0 0 0 3px color(var(--c-input-border-color-focused) a(0.4));
+}
+
+.input.unchecked:enabled + .checkbox:hover {
+  border-color: var(--c-input-border-color-hover);
+  background-color: var(--c-input-bg-color-hover);
+}

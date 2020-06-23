@@ -1,0 +1,44 @@
+@keyframes loadingDotBlink {
+
+  0% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.dots {
+  display: inline-block;
+}
+
+.dot {
+  $circleDims: 10px;
+
+  display: inline-block;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  width: $circleDims;
+  height: $circleDims;
+  background-color: currentColor;
+  animation: loadingDotBlink 1.2s infinite;
+  animation-fill-mode: both;
+  will-change: opacity;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+}

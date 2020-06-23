@@ -1,0 +1,36 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.heading {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--c-text-heading);
+}
+
+.h1 {
+  font-size: var(--font-xl);
+}
+
+.h2 {
+  font-size: var(--font-l);
+}
+
+.h3 {
+  font-size: var(--font-ml);
+  font-weight: 500;
+}
+
+.h4 {
+  font-size: var(--font-m);
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: var(--font-s);
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: var(--font-xs);
+}
