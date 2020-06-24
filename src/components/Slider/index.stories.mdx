@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Slider from '.';
+
+<Meta title="Components|Slider" component={Slider} />
+
+# Slider
+# <small>`import { Slider } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <Slider name="example" onChange={() => null} />
+  </Story>
+</Preview>
+
+#### Disabled
+<Preview>
+  <Story name="Disabled">
+    <Slider name="example" onChange={() => null} isDisabled />
+  </Story>
+</Preview>
+
+<Props of={Slider} />

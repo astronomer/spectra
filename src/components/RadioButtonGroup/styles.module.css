@@ -1,0 +1,79 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.container {
+  display: flex;
+  border-radius: var(--radius-btn);
+  border: solid 2px var(--c-input-border-color);
+  background-color: var(--c-input-bg-color);
+}
+
+.option {
+  position: relative;
+  display: flex;
+  flex: auto;
+  border-left: solid 2px var(--c-input-border-color);
+
+  &:first-child {
+    border: 0;
+    border-radius: var(--radius-btn) 0 0 var(--radius-btn);
+  }
+
+  &:last-child {
+    border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
+  }
+}
+
+/* Visusally hidden inputs but still accessible */
+.input {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.label {
+  z-index: 1;
+  border-radius: inherit;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.5rem;
+  text-align: center;
+  color: var(--c-input-color);
+  font-size: var(--font-s);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, background;
+}
+
+.input:not([disabled]) + label {
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--c-input-bg-color-hover);
+  }
+}
+
+.input[disabled] + .label {
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  color: var(--c-input-border-color);
+}
+
+.input:focus + .label {
+  position: relative;
+  box-shadow: 0 0 0 2px var(--c-input-border-color-focused), 0 0 0 5px color(var(--c-input-border-color-focused) a(0.4));
+  background-color: var(--c-input-bg-color-focused);
+}
+
+.input:checked + .label,
+.input:checked + .label:hover {
+  background-color: var(--c-input-bg-color-focused);
+  font-weight: 700;
+}

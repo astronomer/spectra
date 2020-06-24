@@ -1,0 +1,29 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Select from '.';
+
+<Meta title="Components|Select" component={Select} />
+
+# Select
+# <small>`import { Select } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <Select>
+      <option value="foo">Foo</option>
+      <option value="bar">Bar</option>
+    </Select>
+  </Story>
+</Preview>
+
+#### Disabled
+<Preview>
+  <Story name="Disabled">
+    <Select isDisabled>
+      <option value="foo">Foo</option>
+      <option value="bar">Bar</option>
+    </Select>
+  </Story>
+</Preview>
+
+<Props of={Select} />

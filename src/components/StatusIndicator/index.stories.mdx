@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import StatusIndicator from '.';
+
+<Meta title="Components|StatusIndicator" component={StatusIndicator} />
+
+# Status Indicator
+# <small>`import { StatusIndicator } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Inflight">
+    <StatusIndicator status="neutral" inFlight />
+  </Story>
+  <Story name="Positive">
+    <StatusIndicator status="positive" />
+  </Story>
+  <Story name="Warn">
+    <StatusIndicator status="warn" />
+  </Story>
+  <Story name="Negative">
+    <StatusIndicator status="negative" />
+  </Story>
+  <Story name="Neutral">
+    <StatusIndicator status="neutral" />
+  </Story>
+  <Story name="Inactive">
+    <StatusIndicator status="inactive" />
+  </Story>
+</Preview>
+
+<Props of={StatusIndicator} />

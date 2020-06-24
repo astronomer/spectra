@@ -1,0 +1,45 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.container {
+  position: relative;
+}
+
+.select {
+  @include input;
+
+  position: relative;
+  padding-right: 2.5rem;
+
+  &.light {
+    background-color: var(--white11);
+    border-color: var(--white11);
+  }
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  color: var(--c-input-border-color);
+}
+
+.select:hover + .iconWrapper {
+  color: var(--c-input-border-color-hover);
+}
+
+.select:disabled + .iconWrapper {
+  opacity: 0.4;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: currentColor;
+}

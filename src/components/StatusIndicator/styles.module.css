@@ -1,0 +1,59 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  vertical-align: initial;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  fill: currentColor;
+  stroke: currentColor;
+
+  &.positive {
+    color: var(--c-status-positive);
+  }
+
+  &.warn {
+    color: var(--c-status-warn);
+  }
+
+  &.negative {
+    color: var(--c-status-negative);
+  }
+
+  &.neutral {
+    color: var(--c-status-neutral);
+  }
+
+  &.inactive {
+    color: var(--gray10);
+  }
+}
+
+.container.inFlight .indicator {
+  opacity: 0.6;
+  animation: pulse 2s infinite ease-in-out;
+
+  &.secondDot {
+    animation-delay: -1s;
+  }
+}

@@ -21,6 +21,11 @@ import InputAutocomplete from './components/InputAutocomplete/index.jsx';
 import KubesLogo from './components/KubesLogo/index.jsx';
 import LoadingDots from './components/LoadingDots/index.jsx';
 import NumberInput from './components/NumberInput/index.jsx';
+import RadioButtonGroup from './components/RadioButtonGroup/index.jsx';
+import SearchInput from './components/SearchInput/index.jsx';
+import Select from './components/Select/index.jsx';
+import Slider from './components/Slider/index.jsx';
+import StatusIndicator from './components/StatusIndicatorr/index.jsx';
 import Toast from './components/Toast/index.jsx';
 import Tooltip from './components/Tooltip/index.jsx';
 
@@ -47,6 +52,11 @@ export {
   KubesLogo,
   LoadingDots,
   NumberInput,
+  RadioButtonGroup,
+  SearchInput,
+  Select,
+  Slider,
+  StatusIndicator,
   Toast,
   Tooltip,
 };

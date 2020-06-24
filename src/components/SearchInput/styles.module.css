@@ -1,0 +1,27 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.searchWrapper {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.searchIcon {
+  z-index: 1;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.45rem;
+  width: 1.25rem;
+  height: auto;
+  pointer-events: none;
+  color: var(--c-input-border-color);
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+
+.searchInput {
+  padding-left: 1.75rem;
+}

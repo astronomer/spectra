@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import SearchInput from '.';
+
+<Meta title="Components|SearchInput" component={SearchInput} />
+
+# Search Input
+# <small>`import { SearchInput } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <SearchInput name="example" />
+  </Story>
+</Preview>
+
+#### Disabled
+<Preview>
+  <Story name="Disabled">
+    <SearchInput name="example" isDisabled />
+  </Story>
+</Preview>
+
+<Props of={SearchInput} />
