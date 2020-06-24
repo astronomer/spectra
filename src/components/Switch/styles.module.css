@@ -1,0 +1,73 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+$switch-width: 2.25rem;
+$thumb-diameter: 1.25rem;
+
+.label {
+  display: inline-block;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* Visusally hidden inputs but still accessible */
+.input {
+  @include visuallyHidden;
+}
+
+.switch {
+  box-sizing: content-box;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  width: $switch-width;
+  padding: 2px;
+  background-color: var(--c-input-border-color);
+  cursor: pointer;
+
+  &::before {
+    border-radius: 50%;
+    width: $thumb-diameter;
+    height: $thumb-diameter;
+    content: '';
+    background-color: var(--c-input-bg-color);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+    transition-property: transform, background-color;
+  }
+}
+
+.input:disabled + .switch {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.input.checked + .switch {
+  background-color: var(--c-input-border-color-focused);
+
+  &::before {
+    background-color: var(--c-input-bg-color-focused);
+    transform: translateX(resolve($switch-width - $thumb-diameter));
+  }
+}
+
+.input:enabled:focus + .switch {
+  box-shadow: 0 0 0 3px color(var(--c-input-border-color-focused) a(0.4));
+
+  &::before {
+    background-color: var(--white10);
+  }
+}
+
+.input.unchecked:enabled + .switch:hover {
+  background-color: var(--c-input-border-color-hover);
+
+  &::before {
+    background-color: var(--c-input-bg-color-hover);
+  }
+}

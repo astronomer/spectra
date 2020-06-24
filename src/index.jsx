@@ -25,7 +25,9 @@ import RadioButtonGroup from './components/RadioButtonGroup/index.jsx';
 import SearchInput from './components/SearchInput/index.jsx';
 import Select from './components/Select/index.jsx';
 import Slider from './components/Slider/index.jsx';
-import StatusIndicator from './components/StatusIndicatorr/index.jsx';
+import StatusIndicator from './components/StatusIndicator/index.jsx';
+import Switch from './components/Switch/index.jsx';
+import TextArea from './components/TextArea/index.jsx';
 import Toast from './components/Toast/index.jsx';
 import Tooltip from './components/Tooltip/index.jsx';
 
@@ -57,6 +59,8 @@ export {
   Select,
   Slider,
   StatusIndicator,
+  Switch,
+  TextArea,
   Toast,
   Tooltip,
 };

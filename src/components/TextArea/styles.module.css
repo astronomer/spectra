@@ -1,0 +1,18 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.textArea {
+  @include input;
+
+  resize: none;
+  height: auto;
+  min-height: 5.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  line-height: 1.5;
+
+  &.light {
+    background-color: var(--white11);
+    border-color: var(--white11);
+  }
+}

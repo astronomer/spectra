@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import TextArea from '.';
+
+<Meta title="Inputs|TextArea" component={TextArea} />
+
+# Textarea
+# <small>`import { TextArea } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <TextArea name="example" />
+  </Story>
+</Preview>
+
+#### Disabled
+<Preview>
+  <Story name="isDisabled">
+    <TextArea name="example" isDisabled />
+  </Story>
+</Preview>
+
+<Props of={TextArea} />

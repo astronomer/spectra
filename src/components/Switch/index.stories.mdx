@@ -1,0 +1,22 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import Switch from '.';
+
+<Meta title="Inputs|Switch" component={Switch} />
+
+# Switch
+# <small>`import { Switch } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <Switch name="example" label="Example" />
+  </Story>
+  <Story name="isChecked">
+    <Switch name="example-checked" label="Example" isChecked />
+  </Story>
+  <Story name="isDisabled">
+    <Switch name="example-disabled" label="Example" isDisabled />
+  </Story>
+</Preview>
+
+<Props of={Switch} />
