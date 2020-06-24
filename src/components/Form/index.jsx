@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 
 import customFormErrors from './errors.js';
-import useToast from '../Toast';
+import { useToast } from '../Toast';
 
 import s from './styles.module.css';
 
