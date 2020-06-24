@@ -55,6 +55,7 @@ $btnBorderWidth: 0.125rem; /* 2px */
 
 @mixin solidButton($background, $hoverBackground, $textColor: --white10) {
   @include focusShadow($background);
+
   border: $btnBorderWidth solid var($background);
   color: var($textColor);
   background-color: var($background);
@@ -74,6 +75,7 @@ $btnBorderWidth: 0.125rem; /* 2px */
 
 @mixin outlineButton($color) {
   @include focusShadow($color);
+
   border: $btnBorderWidth solid currentColor;
   color: var($color);
   background-color: var(--white10);
@@ -89,6 +91,7 @@ $btnBorderWidth: 0.125rem; /* 2px */
 
 /* Input */
 @mixin input {
+  @include focusShadow(--c-input-border-color-focused);
   $height: 2.25rem;
 
   display: block;
@@ -127,7 +130,6 @@ $btnBorderWidth: 0.125rem; /* 2px */
     }
 
     &:focus {
-      box-shadow: 0 0 0 1px var(--c-input-border-color-focused);
       border-color: var(--c-input-border-color-focused);
       background-color: var(--c-input-bg-color-focused);
     }

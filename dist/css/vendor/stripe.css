@@ -1,0 +1,28 @@
+.StripeElement {
+  @include input;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
+
+  &:hover {
+    border-color: var(--gray08);
+    background-color: var(--white11);
+  }
+
+  &.StripeElement--focus,
+  &.StripeElement--focus:hover {
+    box-shadow: 0 0 0 1px var(--c-input-border-color-focused);
+    border-color: var(--c-input-border-color-focused);
+    background-color: var(--white10);
+  }
+
+  &.StripeElement--invalid,
+  &.StripeElement--invalid:hover {
+    border-color: var(--c-status-negative);
+  }
+
+  &.StripeElement--invalid.StripeElement--focus {
+    box-shadow: 0 0 0 1px var(--c-status-negative);
+    border-color: var(--c-status-negative);
+  }
+}

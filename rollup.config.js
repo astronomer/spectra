@@ -15,6 +15,7 @@ const OUTPUT_NAME = 'spectra';
 const GLOBALS = {
   react: 'React',
   'react-dom': 'ReactDOM',
+  classnames: 'classnames',
 };
 
 const PLUGINS = [
@@ -24,20 +25,23 @@ const PLUGINS = [
       autoprefixer,
     ],
   }),
+  resolve({
+    extensions: ['.js', '.jsx', '.css'],
+  }),
+  localResolve(),
+  commonjs(),
   babel({
     exclude: 'node_modules/**',
   }),
-  localResolve(),
-  resolve({
-    browser: true,
-  }),
-  commonjs(),
   filesize(),
   copy({
     targets: [
-      { src: 'src/styles/variables.css', dest: 'dist/' },
-      { src: 'src/styles/mixins.css', dest: 'dist/' },
-      { src: 'src/styles/fonts/**', dest: 'dist/' },
+      { src: 'src/styles/base.css', dest: 'dist/css/' },
+      { src: 'src/styles/variables.css', dest: 'dist/css/' },
+      { src: 'src/styles/mixins.css', dest: 'dist/css/' },
+      { src: 'src/styles/fonts/**', dest: 'dist/css/fonts' },
+      { src: 'src/styles/vendor/**', dest: 'dist/css/vendor' },
+      { src: 'README.md', dest: 'dist/' },
     ],
   }),
 ];
@@ -45,6 +49,10 @@ const PLUGINS = [
 const EXTERNAL = [
   'react',
   'react-dom',
+  'classnames',
+  'components',
+  'react-is',
+  'prop-types',
 ];
 
 const OUTPUT_DATA = [

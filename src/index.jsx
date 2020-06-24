@@ -1,6 +1,6 @@
 // Need to include extensions for Rollup.js
 import AirflowLogo from './components/AirflowLogo/index.jsx';
-import AstroLogo from './components/Astro/index.jsx';
+import AstroLogo from './components/AstroLogo/index.jsx';
 import Badge from './components/Badge/index.jsx';
 import Banner from './components/Banner/index.jsx';
 import Button from './components/Button/index.jsx';
@@ -15,7 +15,7 @@ import Form from './components/Form/index.jsx';
 import FormGroup from './components/FormGroup/index.jsx';
 import Heading from './components/Heading/index.jsx';
 import IconButton from './components/IconButton/index.jsx';
-import InfoTooltip from './components/IntoTooltip/index.jsx';
+import InfoTooltip from './components/InfoTooltip/index.jsx';
 import Input from './components/Input/index.jsx';
 import InputAutocomplete from './components/InputAutocomplete/index.jsx';
 import KubesLogo from './components/KubesLogo/index.jsx';
@@ -28,7 +28,7 @@ import Slider from './components/Slider/index.jsx';
 import StatusIndicator from './components/StatusIndicator/index.jsx';
 import Switch from './components/Switch/index.jsx';
 import TextArea from './components/TextArea/index.jsx';
-import Toast from './components/Toast/index.jsx';
+import { Toast, useToast } from './components/Toast/index.jsx';
 import Tooltip from './components/Tooltip/index.jsx';
 
 export {
@@ -62,5 +62,6 @@ export {
   Switch,
   TextArea,
   Toast,
+  useToast,
   Tooltip,
 };
