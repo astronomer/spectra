@@ -5,11 +5,11 @@ import { addons } from '@storybook/addons';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import storySorter from 'story-sorter';
 
-import globalTheme from './globalTheme';
+import astroTheme from './astroTheme';
 
 addParameters({
   options: {
-    theme: globalTheme,
+    theme: astroTheme,
     storySort: storySorter(['design', 'components', 'inputs', 'assets']),
   },
   docs: {

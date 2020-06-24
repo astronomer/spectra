@@ -3,11 +3,11 @@ import { create } from '@storybook/theming/create';
 export default create({
   base: 'light',
 
-  colorPrimary: '#049cf1',
+  colorPrimary: '#027ec4',
   colorSecondary: '#049cf1',
 
   // UI
-  appBg: '#f5f5f5',
+  appBg: '#e1dde7',
   appContentBg: '#fffefd',
   appBorderColor: '#f5f5f5',
   appBorderRadius: 10,
@@ -21,7 +21,7 @@ export default create({
   textInverseColor: '#fffefd',
 
   // Toolbar default and active colors
-  barTextColor: '#8f8e8c',
+  barTextColor: '#51504f',
   barSelectedColor: '#302c43',
   barBg: '#fffefd',
 

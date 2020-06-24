@@ -4,7 +4,13 @@ import Banner from '.';
 <Meta title="Components|Banner" component={Banner} />
 
 # Banner
-# <small>`import { Banner } from '@astronomer/spectra'`</small>
+
+### Import
+```js
+import { Banner } from '@astronomer/spectra';
+```
+
+### Usage
 
 #### Default (Warning)
 <Preview>
@@ -13,25 +19,18 @@ import Banner from '.';
   </Story>
 </Preview>
 
-#### Error
+#### Banner Types
+Adjust color with `type` prop to correlate visual emphasis with the message being communicated.
 <Preview>
-  <Story name="Error">
-    <Banner type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+  <Story name="Types">
+    <div>
+      <Banner type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+      <Banner type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+      <Banner>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+      <Banner type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
+    </div>
   </Story>
 </Preview>
 
-#### Info
-<Preview>
-  <Story name="Info">
-    <Banner type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
-  </Story>
-</Preview>
-
-#### Success
-<Preview>
-  <Story name="Success">
-    <Banner type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
-  </Story>
-</Preview>
-
+### Props
 <Props of={Banner} />

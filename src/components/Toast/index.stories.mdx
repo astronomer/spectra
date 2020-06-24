@@ -1,13 +1,32 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
-import { Toast } from '.';
+import { Toast, useToast } from '.';
+import Demo from './demo';
+
 
 <Meta title="Components|Toast" component={Toast} />
 
 # Toast
-# <small>`import { Toast, useToast } from '@astronomer/spectra'`</small>
-
 This component is triggered by the `useToast()` hook.
+
+### Import
+```js
+import { useToast } from '@astronomer/spectra';
+```
+
+### Usage
+<Preview>
+  <Demo content="This is a Toast message!" />
+</Preview>
+
+
+### Toast Types
+<Preview>
+  <Demo btnLabel="Show Success Toast" type="success" content="Lorem ipsum dolor sit amet." />
+  <Demo btnLabel="Show Info Toast" type="info" content="Lorem ipsum dolor sit amet." />
+  <Demo btnLabel="Show Warning Toast" type="warning" content="Lorem ipsum dolor sit amet." />
+  <Demo btnLabel="Show Error Toast" type="error" content="Lorem ipsum dolor sit amet." />
+</Preview>
 
 #### Error
 <Preview>
@@ -37,4 +56,5 @@ This component is triggered by the `useToast()` hook.
   </Story>
 </Preview>
 
+### Props
 <Props of={Toast} />
