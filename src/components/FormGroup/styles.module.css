@@ -1,0 +1,24 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.formGroup {
+  @include inputGroup;
+}
+
+.label {
+  @include label;
+
+  &.visuallyHidden {
+    @include visuallyHidden;
+  }
+}
+
+.formGroup.light > .label {
+  color: var(--white10);
+}
+
+.helperText {
+  @include helperText;
+
+  margin: 0.5rem 0 0;
+}

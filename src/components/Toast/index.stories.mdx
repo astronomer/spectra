@@ -1,0 +1,38 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import { Toast } from '.';
+
+<Meta title="Components|Toast" component={Toast} />
+
+# Toast
+This component is triggered by the `useToast()` hook.
+
+#### Error
+<Preview>
+  <Story name="Error">
+    <Toast type="error" content="Lorem ipsum dolor sit amet." />
+  </Story>
+</Preview>
+
+#### Warning
+<Preview>
+  <Story name="Warning">
+    <Toast type="warning" content="Lorem ipsum dolor sit amet." />
+  </Story>
+</Preview>
+
+#### Info
+<Preview>
+  <Story name="Info">
+    <Toast type="info" content="Lorem ipsum dolor sit amet." />
+  </Story>
+</Preview>
+
+#### Success
+<Preview>
+  <Story name="Success">
+    <Toast type="success" content="Lorem ipsum dolor sit amet." />
+  </Story>
+</Preview>
+
+<Props of={Toast} />

@@ -12,8 +12,12 @@ import Dropdown from './components/Dropdown/index.jsx';
 import Empty from './components/Empty/index.jsx';
 import Flash from './components/Flash/index.jsx';
 import Form from './components/Form/index.jsx';
+import FormGroup from './components/FormGroup/index.jsx';
 import Heading from './components/Heading/index.jsx';
+import InfoTooltip from './components/IntoTooltip/index.jsx';
 import LoadingDots from './components/LoadingDots/index.jsx';
+import Toast from './components/Toast/index.jsx';
+import Tooltip from './components/Tooltip/index.jsx';
 
 export {
   AirflowLogo,
@@ -29,6 +33,10 @@ export {
   Empty,
   Flash,
   Form,
+  FormGroup,
   Heading,
+  InfoTooltip,
   LoadingDots,
+  Toast,
+  Tooltip,
 };

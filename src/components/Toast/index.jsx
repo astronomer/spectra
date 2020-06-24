@@ -21,7 +21,7 @@ const icons = {
   success: <FiCheck />,
 };
 
-const Toast = ({
+export const Toast = ({
   type,
   content,
   isClosable,
@@ -60,7 +60,7 @@ Toast.defaultProps = {
   onClose: null,
 };
 
-const useToast = () => {
+export const useToast = () => {
   const notify = ({
     type,
     content,
@@ -91,5 +91,3 @@ const useToast = () => {
 
   return notify;
 };
-
-export default useToast;

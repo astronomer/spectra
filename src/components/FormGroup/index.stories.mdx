@@ -1,0 +1,55 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import FormGroup from '.';
+
+<Meta title="Components|FormGroup" component={FormGroup} />
+
+# FormGroup
+#### Default
+<Preview>
+  <Story name="Default">
+    <FormGroup name="example">
+      [inputs]
+    </FormGroup>
+  </Story>
+</Preview>
+
+#### With Helper Text
+<Preview>
+  <Story name="WithHelperText">
+    <FormGroup
+      name="name-withHelper"
+      helperText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    >
+      [inputs]
+    </FormGroup>
+  </Story>
+</Preview>
+
+#### With Tooltip
+<Preview>
+  <Story name="WithTooltip">
+    <FormGroup
+      name="name-withTooltip"
+      label="Lorem ipsum dolor sit amet, consectetur adipiscing."
+      helperText="Helper text in a tooltip"
+      helperInTooltip
+    >
+      [input]
+    </FormGroup>
+  </Story>
+</Preview>
+
+#### With Label
+<Preview>
+  <Story name="WithLabel">
+    <FormGroup
+      name="name-withLabel"
+      label="Lorem ipsum dolor sit amet, consectetur adipiscing."
+    >
+      [inputs]
+    </FormGroup>
+  </Story>
+</Preview>
+
+<Props of={FormGroup} />

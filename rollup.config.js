@@ -35,9 +35,9 @@ const PLUGINS = [
   filesize(),
   copy({
     targets: [
-      { src: 'src/styles/global.css', dest: 'dist/' },
       { src: 'src/styles/variables.css', dest: 'dist/' },
       { src: 'src/styles/mixins.css', dest: 'dist/' },
+      { src: 'src/styles/fonts/**', dest: 'dist/' },
     ],
   }),
 ];

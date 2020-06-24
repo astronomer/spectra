@@ -1,0 +1,11 @@
+@import 'styles/variables.css';
+
+.iconWrapper {
+  color: var(--c-text-label);
+}
+
+.icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  color: currentColor;
+}
