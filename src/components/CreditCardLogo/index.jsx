@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CreditCardLogo = ({ brand, className, ...otherProps }) => {
+const CreditCardLogo = ({ brand, ...otherProps }) => {
   const brandId = brand.replace(' ', '_').toLowerCase();
   const supportedBrands = ['american_express', 'visa', 'mastercard', 'discover'];
   const useBrandId = supportedBrands.includes(brandId) ? brandId : 'generic';
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 25" className={className} {...otherProps}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 25" {...otherProps}>
       <use xlinkHref={`#${useBrandId}`} />
       <symbol id="american_express" viewBox="0 0 38 25">
         <g>
@@ -83,13 +83,11 @@ const CreditCardLogo = ({ brand, className, ...otherProps }) => {
 };
 
 CreditCardLogo.propTypes = {
-  brand: PropTypes.string,
-  className: PropTypes.string,
+  brand: PropTypes.oneOf(['american_express', 'visa', 'mastercard', 'discover', 'generic']),
 };
 
 CreditCardLogo.defaultProps = {
   brand: 'generic',
-  className: null,
 };
 
 export default CreditCardLogo;

@@ -12,20 +12,22 @@ import { CreditCardLogo } from '@astronomer/spectra';
 
 ### Usage
 <Preview>
-  <Story name="Generic">
+  <Story name="Usage">
+    <CreditCardLogo style={{ width: '3rem' }} />
+  </Story>
+</Preview>
+
+### Card Brand
+Display a specific card brand with a `brand` prop.
+<Preview>
+  <Story name="Brands">
+    <div>
+      <CreditCardLogo brand="american_express" style={{ width: '3rem', marginRight: '1rem' }} />
+      <CreditCardLogo brand="visa" style={{ width: '3rem', marginRight: '1rem' }} />
+      <CreditCardLogo brand="mastercard" style={{ width: '3rem', marginRight: '1rem' }} />
+      <CreditCardLogo brand="discover" style={{ width: '3rem' }} />
+    </div>
     <CreditCardLogo />
-  </Story>
-  <Story name="American Express">
-    <CreditCardLogo brand="american_express" />
-  </Story>
-  <Story name="Visa">
-    <CreditCardLogo brand="visa" />
-  </Story>
-  <Story name="Mastercard">
-    <CreditCardLogo brand="mastercard" />
-  </Story>
-  <Story name="Discover">
-    <CreditCardLogo brand="discover" />
   </Story>
 </Preview>
 
