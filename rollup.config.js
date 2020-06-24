@@ -6,6 +6,7 @@ import filesize from 'rollup-plugin-filesize';
 import copy from 'rollup-plugin-copy';
 import autoprefixer from 'autoprefixer';
 import localResolve from 'rollup-plugin-local-resolve';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import pkg from './package.json';
 
@@ -19,19 +20,20 @@ const GLOBALS = {
 };
 
 const PLUGINS = [
+  peerDepsExternal(),
+  resolve({
+    extensions: ['.js', '.jsx', '.css'],
+  }),
+  commonjs(),
+  localResolve(),
+  babel({
+    exclude: 'node_modules/**',
+  }),
   postcss({
     extract: true,
     plugins: [
       autoprefixer,
     ],
-  }),
-  resolve({
-    extensions: ['.js', '.jsx', '.css'],
-  }),
-  localResolve(),
-  commonjs(),
-  babel({
-    exclude: 'node_modules/**',
   }),
   filesize(),
   copy({
@@ -53,12 +55,23 @@ const EXTERNAL = [
   'components',
   'react-is',
   'prop-types',
+  'react-router-dom',
+  'dayjs',
+  'react-icons/fi',
+  '@tippy.js/react',
+  'toasted-notes',
 ];
 
 const OUTPUT_DATA = [
   {
     file: pkg.main,
     format: 'cjs',
+    sourcemap: true,
+  },
+  {
+    file: pkg.main,
+    format: 'esm',
+    sourcemap: true,
   },
 ];
 

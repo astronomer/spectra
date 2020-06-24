@@ -1,12 +1,8 @@
 {
   "name": "@astronomer/spectra",
-  "version": "0.0.4",
-  "homepage": "https://github.com/astronomer/spectra",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/astronomer/spectra.git"
-  },
+  "version": "0.0.6",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
@@ -23,25 +19,11 @@
     "lint": "eslint --ext .jsx,.js src/",
     "test": "jest -u"
   },
-  "dependencies": {
+  "devDependencies": {
     "@storybook/addon-info": "^5.3.19",
-    "@tippy.js/react": "^3.1.1",
     "babel-plugin-react-docgen": "^4.1.0",
     "casual": "^1.6.2",
-    "classnames": "^2.2.6",
-    "dayjs": "^1.8.28",
     "enzyme": "^3.11.0",
-    "rc-steps": "^4.0.1",
-    "react-datepicker": "^3.0.0",
-    "react-icons": "^3.10.0",
-    "react-router-dom": "^5.2.0",
-    "react-spring": "^8.0.27",
-    "react-stripe-elements": "^6.1.2",
-    "react-stripe-script-loader": "^1.1.1",
-    "recharts": "^1.8.5",
-    "toasted-notes": "^3.2.0"
-  },
-  "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
@@ -94,11 +76,23 @@
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.8.28",
+    "react-router-dom": "^5.2.0",
   },
   "bundledDependencies": {
     "react-datepicker": "^2.11.0",
-    "tippy.js": "^5.2.0"
+    "tippy.js": "^5.2.0",
+    "@tippy.js/react": "^3.1.1",
+    "rc-steps": "^4.0.1",
+    "react-datepicker": "^3.0.0",
+    "react-icons": "^3.10.0",
+    "react-spring": "^8.0.27",
+    "react-stripe-elements": "^6.1.2",
+    "react-stripe-script-loader": "^1.1.1",
+    "recharts": "^1.8.5",
+    "toasted-notes": "^3.2.0",
   },
   "jest": {
     "moduleNameMapper": {
