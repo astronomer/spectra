@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FiGithub } from 'react-icons/fi';
+
+import Input from '.';
+
+<Meta title="Components|Input" component={Input} />
+
+# Input
+# <small>`import { Input } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <Input name="example" />
+  </Story>
+</Preview>
+
+#### Light style
+<Preview>
+  <Story name="Light">
+    <Input name="example" inputStyle="light" />
+  </Story>
+</Preview>
+
+#### Disabled
+<Preview>
+  <Story name="Disabled">
+    <Input name="example" isDisabled />
+  </Story>
+</Preview>
+
+<Props of={Input} />

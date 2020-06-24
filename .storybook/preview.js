@@ -10,7 +10,7 @@ import globalTheme from './globalTheme';
 addParameters({
   options: {
     theme: globalTheme,
-    storySort: storySorter(['design', 'components']),
+    storySort: storySorter(['design', 'components', 'assets']),
   },
   docs: {
     container: DocsContainer,

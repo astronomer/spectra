@@ -14,8 +14,13 @@ import Flash from './components/Flash/index.jsx';
 import Form from './components/Form/index.jsx';
 import FormGroup from './components/FormGroup/index.jsx';
 import Heading from './components/Heading/index.jsx';
+import IconButton from './components/IconButton/index.jsx';
 import InfoTooltip from './components/IntoTooltip/index.jsx';
+import Input from './components/Input/index.jsx';
+import InputAutocomplete from './components/InputAutocomplete/index.jsx';
+import KubesLogo from './components/KubesLogo/index.jsx';
 import LoadingDots from './components/LoadingDots/index.jsx';
+import NumberInput from './components/NumberInput/index.jsx';
 import Toast from './components/Toast/index.jsx';
 import Tooltip from './components/Tooltip/index.jsx';
 
@@ -35,8 +40,13 @@ export {
   Form,
   FormGroup,
   Heading,
+  IconButton,
   InfoTooltip,
+  Input,
+  InputAutocomplete,
+  KubesLogo,
   LoadingDots,
+  NumberInput,
   Toast,
   Tooltip,
 };

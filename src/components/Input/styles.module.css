@@ -1,0 +1,11 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.input {
+  @include input;
+
+  &.light {
+    background-color: var(--white11);
+    border-color: var(--white11);
+  }
+}

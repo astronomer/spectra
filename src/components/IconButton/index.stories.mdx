@@ -1,0 +1,17 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FiGithub } from 'react-icons/fi';
+
+import IconButton from '.';
+
+<Meta title="Components|IconButton" component={IconButton} />
+
+# IconButton
+# <small>`import { IconButton } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <Button ariaLabel="a-cool-button" icon={FiGithub} />
+  </Story>
+</Preview>
+
+<Props of={IconButton} />

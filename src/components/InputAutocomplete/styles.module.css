@@ -1,0 +1,30 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.wrapper {
+  position: relative;
+}
+
+.suggestions {
+  z-index: 1;
+  position: absolute;
+  margin-top: 2px;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-dark);
+  background-color: var(--white10);
+  max-height: 300px;
+  max-width: 600px;
+  overflow-y: auto;
+}
+
+.suggestion {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+
+  &.active {
+    color: var(--white10);
+    background-color: var(--blue10);
+  }
+}

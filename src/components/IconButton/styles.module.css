@@ -1,0 +1,66 @@
+@import 'styles/variables.css';
+@import 'styles/mixins.css';
+
+.button {
+  @include button();
+
+  &.displayAsBlockElement {
+    display: block;
+    width: 100%;
+  }
+
+  /* Styles */
+  &.primary {
+    @include solidButton(--blue11, --blue10);
+  }
+
+  &.secondary {
+    @include outlineButton(--blue11);
+  }
+
+  &.primaryDestructive {
+    @include solidButton(--red10, --red09);
+  }
+
+  &.secondaryDestructive {
+    @include outlineButton(--red10);
+  }
+
+  &.primaryAlt {
+    @include solidButton(--purple10, --purple11);
+  }
+
+  &.google {
+    @include solidButton(--c-brand-google, --c-brand-google);
+  }
+
+  &.okta {
+    @include solidButton(--c-brand-okta, --c-brand-okta);
+  }
+
+  &.github {
+    @include solidButton(--c-brand-github, --c-brand-github);
+  }
+
+  /* Sizes */
+  &.small {
+    padding: 0 resolve(0.75rem - 0.125rem);
+    font-size: 0.875rem; /* 14px */
+  }
+
+  &.large {
+    padding: resolve(0.625rem - 0.125rem) resolve(1.5rem - 0.125rem);
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+.icon {
+  $offset-top: -0.2em;/* arbitrary visual fix */
+  $offset-outside: -0.25em;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: $offset-top $offset-outside 0;
+  width: 1em;
+  height: 1em;
+}

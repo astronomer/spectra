@@ -1,0 +1,27 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FiGithub } from 'react-icons/fi';
+
+import InputAutocomplete from '.';
+
+<Meta title="Components|InputAutocomplete" component={InputAutocomplete} />
+
+# Input Autocomplete
+# <small>`import { InputAutocomplete } from '@astronomer/spectra'`</small>
+
+<Preview>
+  <Story name="Default">
+    <InputAutocomplete
+      name="example"
+      onChange={() => null}
+      suggestions={[
+        'Airflow',
+        'Astronomer',
+        'Kubernetes',
+        'Cloud Containers',
+        'Cluster'
+      ]}
+    />
+  </Story>
+</Preview>
+
+<Props of={InputAutocomplete} />
