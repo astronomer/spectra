@@ -1,16 +1,11 @@
-<div align="center">
-  <img src="https://www.astronomer.io/static/iconforLIGHTbackground.svg" width="250" height="100">
-</div>
+# Spectra
 
-# Astronomer Spectra
-
-A design system for The Astronomer Platform, a managed service to run Apache Airflow on Kubernetes.
+Design system for the Astronomer platform.
 
 ## Add to your project
 
-
 ```bash
-yarn add @astronomer/spectra@latest
+yarn add @astronomer/spectra
 ```
 
 ```JSX
@@ -22,7 +17,6 @@ render () {
   );
 }
 ```
-
 
 ## Develop
 

@@ -13,21 +13,24 @@ import pkg from './package.json';
 const INPUT_FILE_PATH = 'src/index.jsx';
 const OUTPUT_NAME = 'spectra';
 
-const GLOBALS = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  classnames: 'classnames',
-};
-
 const PLUGINS = [
   peerDepsExternal(),
   resolve({
     extensions: ['.js', '.jsx', '.css'],
+    jsnext: true,
+    customResolveOptions: {
+      moduleDirectory: 'node_modules',
+    },
   }),
-  commonjs(),
+  commonjs({
+    include: 'node_modules/**',
+  }),
   localResolve(),
   babel({
+    presets: ['@babel/preset-react'],
     exclude: 'node_modules/**',
+    runtimeHelpers: true,
+    externalHelpers: true,
   }),
   postcss({
     extract: true,
@@ -48,30 +51,14 @@ const PLUGINS = [
   }),
 ];
 
-const EXTERNAL = [
-  'react',
-  'react-dom',
-  'classnames',
-  'components',
-  'react-is',
-  'prop-types',
-  'react-router-dom',
-  'dayjs',
-  'react-icons/fi',
-  '@tippy.js/react',
-  'toasted-notes',
-];
-
 const OUTPUT_DATA = [
   {
     file: pkg.main,
     format: 'cjs',
-    sourcemap: true,
   },
   {
-    file: pkg.main,
+    file: pkg.module,
     format: 'esm',
-    sourcemap: true,
   },
 ];
 
@@ -81,9 +68,8 @@ const config = OUTPUT_DATA.map(({ file, format }) => ({
     file,
     format,
     name: OUTPUT_NAME,
-    globals: GLOBALS,
   },
-  external: EXTERNAL,
+  external: Object.keys(pkg.peerDependencies),
   plugins: PLUGINS,
 }));
 
