@@ -2,45 +2,45 @@ import React, { forwardRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
-import { FiAlertTriangle, FiZap, FiInfo, FiCheck, FiX, FiSearch, FiChevronDown, FiCircle } from 'react-icons/fi';
+import { FiX, FiAlertTriangle, FiZap, FiInfo, FiCheck, FiSearch, FiChevronDown, FiCircle } from 'react-icons/fi';
 import toaster from 'toasted-notes';
 import Tippy from '@tippy.js/react';
 
 var AirflowLogo = function AirflowLogo(_ref) {
   var className = _ref.className;
-  return React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 150 150",
     className: className
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     fill: "#017cee",
     d: "M3.586 147.805l70.469-72.23c.441-.454.523-1.153.156-1.669-4.285-5.984-12.191-7.02-15.121-11.039-8.68-11.906-10.883-18.648-14.613-18.23a1.15 1.15 0 00-.676.36L18.344 71.09C3.699 86.102 1.602 119.152 1.214 146.828c-.019 1.25 1.5 1.871 2.372.977zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#00ad46",
     d: "M147.805 146.02l-72.23-70.465c-.454-.442-1.153-.528-1.669-.16-5.984 4.289-7.02 12.195-11.039 15.125-11.906 8.68-18.648 10.882-18.23 14.613.031.258.172.492.36.676l26.093 25.457c15.012 14.64 48.062 16.742 75.738 17.129 1.25.015 1.871-1.5.977-2.375zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#04d659",
     fillRule: "evenodd",
     d: "M71.09 131.266c-8.203-8-12.008-23.828 3.715-56.461C49.254 86.223 40.3 101.23 44.707 105.527zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#00c7d4",
     d: "M146.02 1.805l-70.465 72.23c-.442.453-.528 1.153-.16 1.668 4.285 5.984 12.19 7.02 15.12 11.04 8.684 11.905 10.887 18.648 14.614 18.23a1.1 1.1 0 00.676-.36l25.457-26.093c14.644-15.012 16.746-48.063 17.129-75.739.02-1.25-1.5-1.87-2.371-.976zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#11e1ee",
     fillRule: "evenodd",
     d: "M131.262 78.52c-8 8.199-23.825 12.007-56.457-3.715 11.418 25.547 26.425 34.504 30.722 30.097zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#e43921",
     d: "M1.8 3.59l72.235 70.465c.453.441 1.153.527 1.668.156 5.98-4.285 7.02-12.191 11.04-15.121 11.905-8.68 18.648-10.883 18.23-14.613a1.15 1.15 0 00-.36-.676L78.52 18.344C63.508 3.699 30.457 1.602 2.78 1.214 1.53 1.199.905 2.714 1.8 3.59zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#ff7557",
     fillRule: "evenodd",
     d: "M78.52 18.344c8.199 8 12.003 23.824-3.715 56.46 25.547-11.417 34.5-26.425 30.097-30.722zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#0cb6ff",
     fillRule: "evenodd",
     d: "M18.344 71.09c8-8.203 23.824-12.004 56.46 3.715-11.417-25.547-26.425-34.5-30.722-30.098zm0 0"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#4a4848",
     d: "M77.965 74.754a3.151 3.151 0 11-6.3.081 3.151 3.151 0 016.3-.081zm0 0"
   }));
@@ -77,12 +77,12 @@ var AstroLogo = function AstroLogo(_ref) {
   // Keeps gradient ID's from conflicting
   var random = Math.random().toString(36).substring(7);
   var id = "astro-gradient-".concat(random);
-  return React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     id: "light",
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 1092.9 618",
     className: style
-  }, React.createElement("linearGradient", {
+  }, /*#__PURE__*/React.createElement("linearGradient", {
     id: id,
     x1: "13.6",
     x2: "960.989",
@@ -90,19 +90,19 @@ var AstroLogo = function AstroLogo(_ref) {
     y2: "331.301",
     gradientTransform: "matrix(1 0 0 -1 0 663.302)",
     gradientUnits: "userSpaceOnUse"
-  }, React.createElement("stop", {
+  }, /*#__PURE__*/React.createElement("stop", {
     offset: "0",
     stopColor: "#F96024"
-  }), React.createElement("stop", {
+  }), /*#__PURE__*/React.createElement("stop", {
     offset: ".787",
     stopColor: "#FF9907"
-  })), React.createElement("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     fill: dark ? '#282632' : '#e2e0df',
     d: "M166.4 588.2c3.9 7.5 11.3 12.1 19.4 12.1h108.3c13.8 0 23.8-12.4 27.2-18.9l60.8-116.6c1.1-2 4.7-4.2 6.4-4.2h287.1c1.8 0 5.4 2.2 6.4 4.2l60.7 116.6c3.4 6.5 13.5 18.9 27.2 18.9h108.3c8.1 0 15.5-4.6 19.4-12.1 3.8-7.2 3.7-16.1-.3-23.3L602.2 29.4c-4-7.2-11.3-11.6-19.1-11.6h-102c-7.8 0-15.2 4.5-19.1 11.6L166.7 564.9c-4 7.1-4.1 16.1-.3 23.3zm291.7-269.6l74-142 74 142c.7 1.4 1.3 3.6 1.1 4.4-.3.1-.9.3-2.2.3H459.2c-1.3 0-1.9-.2-2.2-.3-.2-.8.4-2.9 1.1-4.4z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "#A39A8B",
     d: "M964.8 244.5c1.3-3.6 5.3-6.5 9.6-7.2l91.9-14.3c3.9-.6 7.2.7 8.5 3.4 1.3 2.7.3 6.2-2.7 8.8l-68.6 62.8c-3.2 3-8 4.2-11.6 3s-5.2-4.5-3.9-8.1l.9-2.4c2.2-7.8 1.7-15.4-1.6-22.2-3.4-7-9.4-12.3-17.4-15.4-.4-.1-.9-.3-1.3-.4-1.8-.6-3.1-1.7-3.8-3.1-.6-1.4-.7-3.1 0-4.9z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     fill: "url(#".concat(id, ")"),
     d: "M18 373.7c35.3-103.2 282.8-193.1 282.8-193.1.7-.2 1.5-.4 2.3-.4 4 0 7.3 3.3 7.3 7.3 0 2.9-1.7 5.4-4.1 6.6-40.3 19.7-221 111.1-240 180.8-2.8 8-3.4 16.1.4 23.2 15.3 29 95 40.9 213.4 31.9 110.9-8.4 246.7-23.9 413.7-75.2 77.5-23.8 151.5-50.5 220.1-79.5l2.3-.9 9-3.5c2.9-1.2 6.1-1.8 9.5-1.8 14.1 0 25.6 11.3 26 25.3.2 1.4.3 2.8.2 4.2-.5 9.1-6.7 16.9-16.5 20.8l-7.5 3.2c-69.4 28.9-141.5 54.7-220.4 79-148.6 45.7-286.6 70.5-447.3 80.3-21.4 1.3-41.7 2-60.8 2-13.9 0-27.1-.3-39.5-1-5.1-.3-10.1-.6-15-1-43.5-4.2-165-23.1-135.9-108.2z"
   }));
@@ -250,7 +250,7 @@ function _objectWithoutProperties(source, excluded) {
 }
 
 function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
 
 function _arrayWithHoles(arr) {
@@ -258,10 +258,7 @@ function _arrayWithHoles(arr) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
   var _d = false;
@@ -287,8 +284,25 @@ function _iterableToArrayLimit(arr, i) {
   return _arr;
 }
 
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
 function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 var s = {"badge":"styles-module_badge__3m7_p","error":"styles-module_error__3AvIL","warning":"styles-module_warning__n3TNG","info":"styles-module_info__3eZOX","success":"styles-module_success__1KURQ"};
@@ -299,7 +313,7 @@ var Badge = function Badge(_ref) {
       text = _ref.text,
       otherProps = _objectWithoutProperties(_ref, ["className", "status", "text"]);
 
-  return React.createElement("span", _extends({
+  return /*#__PURE__*/React.createElement("span", _extends({
     className: cn(className, s[status], s.badge)
   }, otherProps), text);
 };
@@ -376,11 +390,11 @@ var Banner = function Banner(_ref) {
   var type = _ref.type,
       children = _ref.children,
       className = _ref.className;
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     "data-name": "banner",
     "data-alert": type,
     className: cn(className, s$1[type], s$1.container)
-  }, React.createElement("div", null, children));
+  }, /*#__PURE__*/React.createElement("div", null, children));
 };
 
 Banner.propTypes = {
@@ -455,14 +469,14 @@ var LoadingDots = function LoadingDots(_ref) {
   var className = _ref.className,
       otherProps = _objectWithoutProperties(_ref, ["className"]);
 
-  return React.createElement("span", _extends({
+  return /*#__PURE__*/React.createElement("span", _extends({
     className: cn(className, s$2.dots),
     "data-testid": "LoadingDots"
-  }, otherProps), React.createElement("span", {
+  }, otherProps), /*#__PURE__*/React.createElement("span", {
     className: s$2.dot
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     className: s$2.dot
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     className: s$2.dot
   }));
 };
@@ -498,7 +512,7 @@ var ButtonIcon = function ButtonIcon(_ref) {
   var icon = _ref.icon,
       position = _ref.position;
   var Icon = icon;
-  return React.createElement(Icon, {
+  return /*#__PURE__*/React.createElement(Icon, {
     className: cn(s$3[position], s$3.icon)
   });
 };
@@ -506,7 +520,7 @@ ButtonIcon.propTypes = {
   icon: PropTypes.func.isRequired,
   position: PropTypes.oneOf(['left', 'right']).isRequired
 };
-var Button = forwardRef(function (_ref2, ref) {
+var Button = /*#__PURE__*/forwardRef(function (_ref2, ref) {
   var type = _ref2.type,
       to = _ref2.to,
       label = _ref2.label,
@@ -523,17 +537,17 @@ var Button = forwardRef(function (_ref2, ref) {
   var btnClasses = cn(className, displayBlock && s$3.displayAsBlockElement, s$3[buttonStyle], s$3[buttonSize], s$3.button);
 
   var renderButtonContents = function renderButtonContents() {
-    return React.createElement(React.Fragment, null, iconLeft && React.createElement(ButtonIcon, {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, iconLeft && /*#__PURE__*/React.createElement(ButtonIcon, {
       icon: iconLeft,
       position: "left"
-    }), label, iconRight && React.createElement(ButtonIcon, {
+    }), label, iconRight && /*#__PURE__*/React.createElement(ButtonIcon, {
       icon: iconRight,
       position: "right"
     }));
   };
 
   if (type === 'internal') {
-    return React.createElement(Link, _extends({
+    return /*#__PURE__*/React.createElement(Link, _extends({
       ref: ref,
       to: to,
       className: btnClasses
@@ -541,7 +555,7 @@ var Button = forwardRef(function (_ref2, ref) {
   }
 
   if (type === 'external') {
-    return React.createElement("a", _extends({
+    return /*#__PURE__*/React.createElement("a", _extends({
       ref: ref,
       href: to,
       className: btnClasses,
@@ -550,16 +564,16 @@ var Button = forwardRef(function (_ref2, ref) {
     }, otherProps), renderButtonContents());
   }
 
-  return React.createElement("button", _extends({
+  return /*#__PURE__*/React.createElement("button", _extends({
     // eslint-disable-line
     ref: ref,
     type: type,
     className: btnClasses,
     disabled: isDisabled || inFlight,
     "data-inflight": inFlight ? 'true' : null
-  }, otherProps), !inFlight && renderButtonContents(), inFlight && React.createElement(React.Fragment, null, React.createElement(LoadingDots, {
+  }, otherProps), !inFlight && renderButtonContents(), inFlight && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(LoadingDots, {
     className: s$3.inFlightDots
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     className: s$3.inFlightText
   }, renderButtonContents())));
 });
@@ -803,7 +817,7 @@ var Heading = function Heading(_ref) {
       otherProps = _objectWithoutProperties(_ref, ["as", "styleAs", "children", "className"]);
 
   var HTag = as;
-  return React.createElement(HTag, _extends({
+  return /*#__PURE__*/React.createElement(HTag, _extends({
     className: cn(className, styleAs ? s$4[styleAs] : s$4[as], s$4.heading)
   }, otherProps), children);
 };
@@ -915,16 +929,16 @@ var Card = function Card(_ref) {
       footer = _ref.footer,
       noPadding = _ref.noPadding,
       className = _ref.className;
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: cn(className, s$5.card),
     "data-testid": "Card"
-  }, header && React.createElement("div", {
+  }, header && /*#__PURE__*/React.createElement("div", {
     className: s$5.cardHeader
-  }, typeof header === 'string' && React.createElement(Heading, {
+  }, typeof header === 'string' && /*#__PURE__*/React.createElement(Heading, {
     as: "h4"
-  }, header), typeof header !== 'string' && header), React.createElement("div", {
+  }, header), typeof header !== 'string' && header), /*#__PURE__*/React.createElement("div", {
     className: cn(s$5.cardBody, noPadding && s$5.noPadding)
-  }, children), footer && React.createElement("div", {
+  }, children), footer && /*#__PURE__*/React.createElement("div", {
     className: s$5.cardFooter
   }, footer));
 };
@@ -1026,41 +1040,41 @@ Card.__docgenInfo = {
 
 var CeleryLogo = function CeleryLogo(_ref) {
   var className = _ref.className;
-  return React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     id: "svg3392",
     viewBox: "0 0 137 137",
     className: className
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     id: "path4707-0",
     fill: "#ff9a09",
     d: "M95.913 22.228c-.129 0-.252.489-.34 1.465l-1.138 11.96a3.81 3.81 0 01-.378 1.313 3.953 3.953 0 01-.9-.532l-4.684-3.869c-1.526-1.242-1.74-.993-.533.534l3.904 4.862c.205.26.361.55.493.852-.54.32-1.14.533-1.77.567l-16.753 1.03c-1.952.106-1.952.355 0 .497l16.54 1.313c.614.045 1.2.257 1.73.57-.121.2-.258.39-.416.566l-4.721 5.146c-1.314 1.455-1.136 1.633.426.462l5.749-4.402a3.92 3.92 0 01.476-.3c.336.533.568 1.128.626 1.756l1.348 14.056c.178 1.952.496 1.952.674 0L97.63 45.84c.05-.557.24-1.089.514-1.575.193.11.379.228.55.368l4.687 3.833c1.49 1.243 1.74 1.03.497-.496l-3.835-4.686a3.643 3.643 0 01-.402-.596c.562-.357 1.194-.597 1.858-.646l9.974-.78c1.952-.142 1.952-.427 0-.64l-9.974-1.028c-.709-.08-1.396-.369-1.993-.798.15-.351.331-.687.573-.978l3.906-4.684c1.242-1.49 1.028-1.704-.498-.497l-4.792 3.833a3.9 3.9 0 01-.74.449 3.986 3.986 0 01-.36-1.23L96.28 23.693c-.106-.976-.24-1.465-.368-1.465z"
-  }), React.createElement("style", {
+  }), /*#__PURE__*/React.createElement("style", {
     id: "style4689"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     id: "g4984",
     transform: "translate(-1.836 -13)"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     id: "rect3542-0",
     fill: "#00B35D",
     stroke: "#f48e06",
     strokeLinecap: "square",
     strokeWidth: ".217",
     d: "M28.834 62.424h102.052c-22.734 16.35-24.697 33.037 0 50.153H28.834c-14.182 0-25.6-11.184-25.6-25.077 0-13.892 11.418-25.076 25.6-25.076z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     id: "rect4161-7",
     fill: "#39b865",
     strokeLinecap: "round",
     strokeWidth: "22",
     d: "M28.834 62.424c-10.07 0-18.74 5.64-22.925 13.883H116.76c2.977-4.655 7.729-9.283 14.125-13.883H28.834zM3.235 87.501c0 4.028.965 7.826 2.675 11.193h110.62c-2.358-3.751-3.481-7.482-3.433-11.193H3.235z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     id: "path4174-4",
     fill: "none",
     stroke: "#0CBEDB",
     strokeLinecap: "round",
     strokeWidth: "2.798",
     d: "M131.25 62.316c-.77 0-1.528.04-2.278.108H28.834c-14.182 0-25.599 11.184-25.599 25.077 0 13.892 11.417 25.076 25.6 25.076h100.151a25.34 25.34 0 002.264.107 6.229 6.229 0 100-12.456c-7.653 0-12.473-5.318-12.473-12.727 0-7.41 4.82-12.73 12.473-12.73a6.229 6.229 0 100-12.455z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     id: "rect3544-7",
     fill: "#07D65B",
     stroke: "#0CBEDB",
@@ -1068,23 +1082,23 @@ var CeleryLogo = function CeleryLogo(_ref) {
     strokeWidth: "2.798",
     d: "M131.25 62.316c-14.106 0-24.929 11.59-24.929 25.185 0 13.594 10.823 25.183 24.93 25.183a6.229 6.229 0 100-12.456c-7.654 0-12.474-5.318-12.474-12.727 0-7.41 4.82-12.73 12.473-12.73a6.229 6.229 0 100-12.455z",
     overflow: "visible"
-  })), React.createElement("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     id: "path4711-2",
     fill: "#09a6d1",
     d: "M66.908 37.07c0-.04 0-.04 0 0-1.709-.04-5.941-.39-7.999-2.486-2.097-2.097-2.485-6.368-2.563-8.115-.077 1.747-.466 6.018-2.562 8.115-2.097 2.097-6.29 2.407-8 2.446 1.71.04 5.942.389 8 2.447 2.096 2.096 2.485 6.367 2.562 8.115.078-1.748.466-6.019 2.563-8.115 2.097-2.02 6.29-2.369 7.999-2.408.039 0 0 0 0 0"
-  }), React.createElement("circle", {
+  }), /*#__PURE__*/React.createElement("circle", {
     id: "circle4705-4",
     cx: "28.734",
     cy: "27.947",
     r: "2.663",
     fill: "#00B35D"
-  }), React.createElement("circle", {
+  }), /*#__PURE__*/React.createElement("circle", {
     id: "circle4713-2",
     cx: "66.367",
     cy: "20.717",
     r: "2.446",
     fill: "#f4362c"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     id: "path4372-06",
     fill: "#777572",
     d: "M17.812 14.414s0-.069 0 0c-1.165-.069-4.111-.274-5.482-1.713-1.439-1.44-1.713-4.385-1.781-5.55-.069 1.165-.343 4.11-1.782 5.55-1.439 1.439-4.317 1.644-5.481 1.713 1.164 0 4.042.274 5.481 1.713 1.44 1.439 1.713 4.385 1.782 5.55.068-1.165.342-4.111 1.781-5.55 1.44-1.44 4.317-1.713 5.482-1.713.068 0 0 0 0 0"
@@ -1126,10 +1140,10 @@ var Checkbox = function Checkbox(_ref) {
       isDisabled = _ref.isDisabled,
       otherProps = _objectWithoutProperties(_ref, ["name", "label", "isChecked", "onChange", "isDisabled"]);
 
-  return React.createElement("label", _extends({
+  return /*#__PURE__*/React.createElement("label", _extends({
     className: cn(isDisabled && s$6.disabled, s$6.label),
     htmlFor: name
-  }, otherProps), React.createElement("input", {
+  }, otherProps), /*#__PURE__*/React.createElement("input", {
     type: "checkbox",
     id: name,
     name: name,
@@ -1137,7 +1151,7 @@ var Checkbox = function Checkbox(_ref) {
     checked: isChecked,
     onChange: onChange,
     disabled: isDisabled
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true",
     className: s$6.checkbox
   }), label);
@@ -1219,163 +1233,161 @@ Checkbox.__docgenInfo = {
 
 var CreditCardLogo = function CreditCardLogo(_ref) {
   var brand = _ref.brand,
-      className = _ref.className,
-      otherProps = _objectWithoutProperties(_ref, ["brand", "className"]);
+      otherProps = _objectWithoutProperties(_ref, ["brand"]);
 
   var brandId = brand.replace(' ', '_').toLowerCase();
   var supportedBrands = ['american_express', 'visa', 'mastercard', 'discover'];
   var useBrandId = supportedBrands.includes(brandId) ? brandId : 'generic';
-  return React.createElement("svg", _extends({
+  return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 38 25",
-    className: className
-  }, otherProps), React.createElement("use", {
+    viewBox: "0 0 38 25"
+  }, otherProps), /*#__PURE__*/React.createElement("use", {
     xlinkHref: "#".concat(useBrandId)
-  }), React.createElement("symbol", {
+  }), /*#__PURE__*/React.createElement("symbol", {
     id: "american_express",
     viewBox: "0 0 38 25"
-  }, React.createElement("g", null, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
     d: "M37.96875,21.875 C37.96875,23.59375 36.5625,25 34.84375,25 L3.59375,25 C1.875,25 0.46875,23.59375 0.46875,21.875 L0.46875,3.125 C0.46875,1.40625 1.875,0 3.59375,0 L34.84375,0 C36.5625,0 37.96875,1.40625 37.96875,3.125 L37.96875,21.875 Z",
     fill: "#5ec1ec"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M37.050625,0.918125 C37.616875,1.484375 37.96875,2.265625 37.96875,3.125 L37.96875,12.5 L37.96875,21.875 C37.96875,22.734375 37.6175,23.515625 37.050625,24.081875 C36.48375,24.648125 35.703125,25 34.84375,25 L19.21875,25 L3.59375,25 C2.734375,25 1.953125,24.64875 1.386875,24.081875 L37.050625,0.918125 Z",
     fill: "#5BBBE6"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     transform: "translate(6.875000, 9.375000)",
     fill: "#fff"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M4.565625,6.20125 L4.28,5.11375 L2.395625,5.11375 L2.101875,6.20125 L0.38,6.20125 L2.2725,0.3775 L4.363125,0.3775 L6.27875,6.20125 L4.565625,6.20125 Z M3.955,3.828125 L3.705,2.87625 C3.64625,2.665 3.57625,2.391875 3.4925,2.055625 C3.409375,1.719375 3.354375,1.47875 3.3275,1.33375 C3.304375,1.46875 3.256875,1.690625 3.186875,2 C3.116875,2.309375 2.96125,2.919375 2.720625,3.82875 L3.955,3.828125 Z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M9.43375,6.20125 L8.2475,2.023125 L8.211875,2.023125 C8.2675,2.734375 8.295,3.286875 8.295,3.681875 L8.295,6.200625 L6.906875,6.200625 L6.906875,0.4 L8.993125,0.4 L10.20375,4.51875 L10.235625,4.51875 L11.42125,0.4 L13.5125,0.4 L13.5125,6.200625 L12.071875,6.200625 L12.071875,3.6575 C12.071875,3.525625 12.074375,3.379375 12.078125,3.2175 C12.081875,3.055625 12.1,2.660625 12.131875,2.03125 L12.09625,2.03125 L10.925625,6.20125 L9.43375,6.20125 Z"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     points: "18.043125 6.20125 14.599375 6.20125 14.599375 0.400625 18.043125 0.400625 18.043125 1.65875 16.165625 1.65875 16.165625 2.57125 17.90375 2.57125 17.90375 3.82875 16.165625 3.82875 16.165625 4.92375 18.043125 4.92375"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     points: "24.28375 6.20125 22.47125 6.20125 21.339375 4.38875 20.22125 6.20125 18.4475 6.20125 20.37125 3.23375 18.561875 0.400625 20.3 0.400625 21.3475 2.19375 22.354375 0.400625 24.14375 0.400625 22.306875 3.35625"
-  })), React.createElement("g", {
+  })), /*#__PURE__*/React.createElement("g", {
     transform: "translate(6.875000, 9.375000)",
     fill: "#fff"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M4.565625,6.20125 L4.28,5.11375 L2.395625,5.11375 L2.101875,6.20125 L0.38,6.20125 L2.2725,0.3775 L4.363125,0.3775 L6.27875,6.20125 L4.565625,6.20125 Z M3.955,3.828125 L3.705,2.87625 C3.64625,2.665 3.57625,2.391875 3.4925,2.055625 C3.409375,1.719375 3.354375,1.47875 3.3275,1.33375 C3.304375,1.46875 3.256875,1.690625 3.186875,2 C3.116875,2.309375 2.96125,2.919375 2.720625,3.82875 L3.955,3.828125 Z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M9.43375,6.20125 L8.2475,2.023125 L8.211875,2.023125 C8.2675,2.734375 8.295,3.286875 8.295,3.681875 L8.295,6.200625 L6.906875,6.200625 L6.906875,0.4 L8.993125,0.4 L10.20375,4.51875 L10.235625,4.51875 L11.42125,0.4 L13.5125,0.4 L13.5125,6.200625 L12.071875,6.200625 L12.071875,3.6575 C12.071875,3.525625 12.074375,3.379375 12.078125,3.2175 C12.081875,3.055625 12.1,2.660625 12.131875,2.03125 L12.09625,2.03125 L10.925625,6.20125 L9.43375,6.20125 Z"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     points: "18.043125 6.20125 14.599375 6.20125 14.599375 0.400625 18.043125 0.400625 18.043125 1.65875 16.165625 1.65875 16.165625 2.57125 17.90375 2.57125 17.90375 3.82875 16.165625 3.82875 16.165625 4.92375 18.043125 4.92375"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     points: "24.28375 6.20125 22.47125 6.20125 21.339375 4.38875 20.22125 6.20125 18.4475 6.20125 20.37125 3.23375 18.561875 0.400625 20.3 0.400625 21.3475 2.19375 22.354375 0.400625 24.14375 0.400625 22.306875 3.35625"
-  }))), React.createElement("path", {
+  }))), /*#__PURE__*/React.createElement("path", {
     d: "M34.84375,0.625 C36.2225,0.625 37.34375,1.74625 37.34375,3.125 L37.34375,21.875 C37.34375,23.25375 36.2225,24.375 34.84375,24.375 L3.59375,24.375 C2.215,24.375 1.09375,23.25375 1.09375,21.875 L1.09375,3.125 C1.09375,1.74625 2.215,0.625 3.59375,0.625 L34.84375,0.625 Z M34.84375,0 L3.59375,0 C1.875,0 0.46875,1.40625 0.46875,3.125 L0.46875,21.875 C0.46875,23.59375 1.875,25 3.59375,25 L34.84375,25 C36.5625,25 37.96875,23.59375 37.96875,21.875 L37.96875,3.125 C37.96875,1.40625 36.5625,0 34.84375,0 Z",
     fill: "#9bcee0"
-  })), React.createElement("symbol", {
+  })), /*#__PURE__*/React.createElement("symbol", {
     id: "visa",
     viewBox: "0 0 38 25"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M37.96875,21.875 C37.96875,23.59375 36.5625,25 34.84375,25 L3.59375,25 C1.875,25 0.46875,23.59375 0.46875,21.875 L0.46875,3.125 C0.46875,1.40625 1.875,0 3.59375,0 L34.84375,0 C36.5625,0 37.96875,1.40625 37.96875,3.125 L37.96875,21.875 Z",
     fill: "#f3f4f4"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M1.09375,6.25 L1.09375,3.125 C1.09375,1.40625 2.5,0 4.21875,0 L34.21875,0 C35.9375,0 37.34375,1.40625 37.34375,3.125 L37.34375,6.25",
     fill: "#5565af"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M37.34375,18.75 L37.34375,21.875 C37.34375,23.59375 35.9375,24.375 34.21875,24.375 L4.21875,24.375 C2.5,24.375 1.09375,23.59375 1.09375,21.875 L1.09375,18.75",
     fill: "#e6a124"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     transform: "translate(9.375000, 8.750000)",
     fill: "#5565af"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M1.960625,5.861875 C2.214375,5.143125 2.3925,4.6825 2.4975,4.48 L4.606875,0.183125 L6.15,0.183125 L2.4975,7.321875 L0.866875,7.321875 L0.246875,0.183125 L1.6875,0.183125 L1.93625,4.48 C1.94875,4.62625 1.955625,4.84375 1.955625,5.129375 C1.948125,5.465 1.93875,5.709375 1.92625,5.861875 L1.960625,5.861875 Z"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     points: "5.505625 7.321875 7.029375 0.183125 8.51875 0.183125 6.995 7.321875"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M13.08375,5.2125 C13.08375,5.89375 12.841875,6.430625 12.36125,6.82625 C11.879375,7.221875 11.22625,7.419375 10.403125,7.419375 C9.683125,7.419375 9.104375,7.273125 8.665,6.98 L8.665,5.641875 C9.2925,5.993125 9.87625,6.169375 10.413125,6.169375 C10.776875,6.169375 11.0625,6.10125 11.2675,5.961875 C11.4725,5.82375 11.575,5.635 11.575,5.393125 C11.575,5.25375 11.553125,5.130625 11.509375,5.024375 C11.465625,4.919375 11.401875,4.820625 11.32125,4.72875 C11.239375,4.6375 11.038125,4.4725 10.715625,4.230625 C10.26625,3.9075 9.95,3.59 9.768125,3.273125 C9.585,2.9575 9.494375,2.6175 9.494375,2.2525 C9.494375,1.8325 9.594375,1.458125 9.796875,1.126875 C9.998125,0.796875 10.285,0.54 10.65875,0.355625 C11.03125,0.171875 11.459375,0.08 11.945625,0.08 C12.65125,0.08 13.298125,0.24125 13.884375,0.563125 L13.351875,1.700625 C12.844375,1.46 12.375625,1.339375 11.945625,1.339375 C11.674375,1.339375 11.45375,1.4125 11.281875,1.559375 C11.10875,1.705625 11.023125,1.9 11.023125,2.140625 C11.023125,2.339375 11.076875,2.513125 11.184375,2.660625 C11.291875,2.80875 11.5325,3.005 11.906875,3.24875 C12.3,3.509375 12.595625,3.796875 12.790625,4.110625 C12.985625,4.42625 13.08375,4.7925 13.08375,5.2125 Z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M17.87375,5.6225 L15.564375,5.6225 L14.724375,7.321875 L13.161875,7.321875 L16.901875,0.15375 L18.723125,0.15375 L19.440625,7.321875 L17.990625,7.321875 L17.87375,5.6225 Z M17.8,4.353125 L17.673125,2.644375 C17.64,2.218125 17.624375,1.80625 17.624375,1.40875 L17.624375,1.233125 C17.480625,1.62375 17.303125,2.0375 17.091875,2.473125 L16.17375,4.353125 L17.8,4.353125 Z"
-  })), React.createElement("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     d: "M37.050625,0.918125 C37.616875,1.484375 37.96875,2.265625 37.96875,3.125 L37.96875,12.5 L37.96875,21.875 C37.96875,22.734375 37.6175,23.515625 37.050625,24.081875 C36.48375,24.648125 35.703125,25 34.84375,25 L19.21875,25 L3.59375,25 C2.734375,25 1.953125,24.64875 1.386875,24.081875 L37.050625,0.918125 Z",
     fill: "#fff",
     opacity: "0.04"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M34.84375,0.625 C36.2225,0.625 37.34375,1.74625 37.34375,3.125 L37.34375,21.875 C37.34375,23.25375 36.2225,24.375 34.84375,24.375 L3.59375,24.375 C2.215,24.375 1.09375,23.25375 1.09375,21.875 L1.09375,3.125 C1.09375,1.74625 2.215,0.625 3.59375,0.625 L34.84375,0.625 Z M34.84375,0 L3.59375,0 C1.875,0 0.46875,1.40625 0.46875,3.125 L0.46875,21.875 C0.46875,23.59375 1.875,25 3.59375,25 L34.84375,25 C36.5625,25 37.96875,23.59375 37.96875,21.875 L37.96875,3.125 C37.96875,1.40625 36.5625,0 34.84375,0 Z",
     fill: "#f8f8f9"
-  })), React.createElement("symbol", {
+  })), /*#__PURE__*/React.createElement("symbol", {
     id: "mastercard",
     viewBox: "0 0 38 25"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M37.96875,21.875 C37.96875,23.59375 36.5625,25 34.84375,25 L3.59375,25 C1.875,25 0.46875,23.59375 0.46875,21.875 L0.46875,3.125 C0.46875,1.40625 1.875,0 3.59375,0 L34.84375,0 C36.5625,0 37.96875,1.40625 37.96875,3.125 L37.96875,21.875 Z",
     fill: "#5565af"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M37.050625,0.918125 C37.616875,1.484375 37.96875,2.265625 37.96875,3.125 L37.96875,12.5 L37.96875,21.875 C37.96875,22.734375 37.6175,23.515625 37.050625,24.081875 C36.48375,24.648125 35.703125,25 34.84375,25 L19.21875,25 L3.59375,25 C2.734375,25 1.953125,24.64875 1.386875,24.081875 L37.050625,0.918125 Z",
     fill: "#fff",
     opacity: "0.04"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     transform: "translate(8.125000, 6.250000)",
     fill: "#EA564b"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M11.09375,2.125 C9.948125,0.825 8.275,0 6.40625,0 C2.955,0 0.15625,2.798125 0.15625,6.25 C0.15625,9.700625 2.955,12.5 6.40625,12.5 C8.275,12.5 9.948125,11.675 11.09375,10.374375 C10.12375,9.273125 9.53125,7.83375 9.53125,6.25 C9.53125,4.66625 10.12375,3.22625 11.09375,2.125 Z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M11.09375,2.125 C10.12375,3.22625 9.53125,4.666875 9.53125,6.25 C9.53125,7.833125 10.12375,9.273125 11.09375,10.374375 C12.06375,9.273125 12.65625,7.83375 12.65625,6.25 C12.65625,4.66625 12.06375,3.22625 11.09375,2.125 Z"
-  })), React.createElement("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     d: "M23.90625,6.25 C22.0375,6.25 20.364375,7.075 19.21875,8.375 C18.948125,8.6825 18.71125,9.01875 18.50375,9.375 L19.93375,9.375 C20.16125,9.765625 20.338125,10.186875 20.478125,10.625 L17.950625,10.625 C17.82375,11.026875 17.731875,11.443125 17.68875,11.875 L20.738125,11.875 C20.759375,12.08125 20.780625,12.2875 20.780625,12.5 C20.780625,12.71125 20.768125,12.919375 20.7475,13.125 L17.688125,13.125 C17.73125,13.556875 17.823125,13.973125 17.95,14.375 L20.485,14.375 C20.345625,14.815 20.15875,15.2325 19.93125,15.625 L18.503125,15.625 C18.71,15.98 18.9475,16.316875 19.218125,16.624375 C20.36375,17.925 22.036875,18.75 23.905625,18.75 C27.356875,18.75 30.155625,15.950625 30.155625,12.5 C30.15625,9.048125 27.3575,6.25 23.90625,6.25 Z",
     fill: "#e9d419"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M34.84375,0.625 C36.2225,0.625 37.34375,1.74625 37.34375,3.125 L37.34375,21.875 C37.34375,23.25375 36.2225,24.375 34.84375,24.375 L3.59375,24.375 C2.215,24.375 1.09375,23.25375 1.09375,21.875 L1.09375,3.125 C1.09375,1.74625 2.215,0.625 3.59375,0.625 L34.84375,0.625 Z M34.84375,0 L3.59375,0 C1.875,0 0.46875,1.40625 0.46875,3.125 L0.46875,21.875 C0.46875,23.59375 1.875,25 3.59375,25 L34.84375,25 C36.5625,25 37.96875,23.59375 37.96875,21.875 L37.96875,3.125 C37.96875,1.40625 36.5625,0 34.84375,0 Z",
     fill: "#7684b7"
-  })), React.createElement("symbol", {
+  })), /*#__PURE__*/React.createElement("symbol", {
     id: "discover",
     viewBox: "0 0 38 25"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M37.96875,21.875 C37.96875,23.59375 36.5625,25 34.84375,25 L3.59375,25 C1.875,25 0.46875,23.59375 0.46875,21.875 L0.46875,3.125 C0.46875,1.40625 1.875,0 3.59375,0 L34.84375,0 C36.5625,0 37.96875,1.40625 37.96875,3.125 L37.96875,21.875 Z",
     fill: "#fff9f0"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     transform: "translate(6.250000, 10.000000)"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M3.678125,2.464375 C3.678125,3.090625 3.5,3.57 3.144375,3.903125 C2.7875,4.235625 2.2725,4.4025 1.599375,4.4025 L0.521875,4.4025 L0.521875,0.599375 L1.715625,0.599375 C2.336875,0.599375 2.81875,0.76375 3.16125,1.09125 C3.50625,1.41875 3.678125,1.876875 3.678125,2.464375 Z M2.840625,2.485625 C2.840625,1.66875 2.479375,1.260625 1.759375,1.260625 L1.329375,1.260625 L1.329375,3.7362507 L1.675625,3.73625 C2.4525,3.736875 2.840625,3.319375 2.840625,2.485625 Z",
     fill: "#414042"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     fill: "#414042",
     points: "4.36 4.4025 4.36 0.599375 5.16625 0.599375 5.16625 4.4025"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M8.369375,3.34625 C8.369375,3.690625 8.24625,3.96 7.998125,4.158125 C7.750625,4.355625 7.4075,4.455625 6.966875,4.455625 C6.561875,4.455625 6.201875,4.37875 5.889375,4.226875 L5.889375,3.4775 C6.14625,3.593125 6.36375,3.6725 6.54125,3.720625 C6.71875,3.766875 6.881875,3.79 7.029375,3.79 C7.205625,3.79 7.341875,3.755625 7.43625,3.68875 C7.52875,3.621875 7.578125,3.52 7.578125,3.3875 C7.578125,3.313125 7.5575,3.246875 7.515,3.18875 C7.474375,3.13 7.4125,3.07375 7.33125,3.020625 C7.250625,2.9675 7.08625,2.880625 6.83875,2.763125 C6.606875,2.65375 6.433125,2.548125 6.315625,2.448125 C6.19875,2.348125 6.106875,2.23125 6.0375,2.096875 C5.968125,1.9625 5.93375,1.80625 5.93375,1.628125 C5.93375,1.291875 6.0475,1.0275 6.275625,0.835 C6.504375,0.641875 6.81875,0.54625 7.221875,0.54625 C7.419375,0.54625 7.608125,0.569375 7.7875,0.61625 C7.966875,0.6625 8.155,0.729375 8.350625,0.81375 L8.090625,1.440625 C7.8875,1.3575 7.71875,1.298125 7.58625,1.26625 C7.453125,1.23375 7.3225,1.216875 7.195,1.216875 C7.041875,1.216875 6.924375,1.251875 6.84375,1.32375 C6.761875,1.395 6.72125,1.4875 6.72125,1.601875 C6.72125,1.673125 6.7375,1.734375 6.770625,1.788125 C6.80375,1.84125 6.85625,1.891875 6.928125,1.94125 C7,1.990625 7.17125,2.079375 7.439375,2.208125 C7.794375,2.378125 8.038125,2.54875 8.170625,2.719375 C8.303125,2.88875 8.369375,3.098125 8.369375,3.34625 Z",
     fill: "#414042"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M10.67375,1.215625 C10.37,1.215625 10.135625,1.330625 9.96875,1.5575 C9.80125,1.785625 9.719375,2.104375 9.719375,2.51125 C9.719375,3.35875 10.0375,3.783125 10.67375,3.783125 C10.94125,3.783125 11.263125,3.718125 11.644375,3.583125 L11.644375,4.259375 C11.331875,4.39 10.983125,4.454375 10.598125,4.454375 C10.045,4.454375 9.621875,4.285625 9.32875,3.95 C9.035625,3.615 8.889375,3.133125 8.889375,2.505 C8.889375,2.109375 8.961875,1.763125 9.10625,1.46625 C9.249375,1.1675 9.456875,0.940625 9.72625,0.781875 C9.996875,0.623125 10.3125,0.54375 10.675,0.54375 C11.044375,0.54375 11.41625,0.633125 11.788125,0.811875 L11.528125,1.4675 C11.385,1.4 11.243125,1.34125 11.098125,1.290625 C10.95375,1.24 10.8125,1.215625 10.67375,1.215625 Z",
     fill: "#414042"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M18.099375,0.599375 L18.91375,0.599375 L17.621875,4.4025 L16.7425,4.4025 L15.4525,0.599375 L16.2675,0.599375 L16.983125,2.8625 C17.0225,2.996875 17.065,3.15125 17.106875,3.33 C17.148125,3.508125 17.175,3.63 17.18625,3.7 C17.205,3.540625 17.27,3.263125 17.38125,2.8625 L18.099375,0.599375 Z",
     fill: "#414042"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     fill: "#414042",
     points: "21.5825 4.4025 19.391875 4.4025 19.391875 0.599375 21.5825 0.599375 21.5825 1.260625 20.198125 1.260625 20.198125 2.095625 21.486875 2.095625 21.486875 2.75625 20.198125 2.75625 20.198125 3.73625 21.5825 3.73625"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M23.1825,2.943125 L23.1825,4.4025 L22.37625,4.4025 L22.37625,0.599375 L23.484375,0.599375 C24.00125,0.599375 24.383125,0.693125 24.631875,0.881875 C24.879375,1.07 25.00375,1.355 25.00375,1.73875 C25.00375,1.961875 24.941875,2.161875 24.819375,2.335625 C24.69625,2.51 24.521875,2.646875 24.296875,2.745625 C24.86875,3.599375 25.24125,4.1525 25.415,4.401875 L24.52,4.401875 L23.611875,2.9425 L23.1825,2.943125 Z M23.1825,2.2875 L23.443125,2.2875 C23.6975,2.2875 23.88625,2.245 24.0075,2.160625 C24.128125,2.075 24.189375,1.94125 24.189375,1.759375 C24.189375,1.57875 24.126875,1.45125 24.003125,1.374375 C23.879375,1.2975 23.6875,1.26 23.4275,1.26 L23.18125,1.26 L23.1825,2.2875 Z",
     fill: "#414042"
-  }), React.createElement("circle", {
+  }), /*#__PURE__*/React.createElement("circle", {
     fill: "#e6a124",
     cx: "13.635",
     cy: "2.50125",
     r: "1.901875"
-  })), React.createElement("path", {
+  })), /*#__PURE__*/React.createElement("path", {
     d: "M37.96875,17.1875 L37.96875,21.875 C37.96875,22.305 37.880625,22.715 37.721875,23.088125 C37.5625,23.46125 37.33375,23.79875 37.050625,24.081875 C36.7675,24.365 36.430625,24.59375 36.056875,24.753125 C35.6825,24.911875 35.273125,25 34.84375,25 L20.808125,25 L6.7725,25 L37.96875,17.1875 Z",
     fill: "#e6a124"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M37.050625,0.918125 C37.616875,1.484375 37.96875,2.265625 37.96875,3.125 L37.96875,12.5 L37.96875,21.875 C37.96875,22.734375 37.6175,23.515625 37.050625,24.081875 C36.48375,24.648125 35.703125,25 34.84375,25 L19.21875,25 L3.59375,25 C2.734375,25 1.953125,24.64875 1.386875,24.081875 L37.050625,0.918125 Z",
     fill: "#fff",
     opacity: "0.08"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M34.84375,0.625 C36.2225,0.625 37.34375,1.74625 37.34375,3.125 L37.34375,21.875 C37.34375,23.25375 36.2225,24.375 34.84375,24.375 L3.59375,24.375 C2.215,24.375 1.09375,23.25375 1.09375,21.875 L1.09375,3.125 C1.09375,1.74625 2.215,0.625 3.59375,0.625 L34.84375,0.625 Z M34.84375,0 L3.59375,0 C1.875,0 0.46875,1.40625 0.46875,3.125 L0.46875,21.875 C0.46875,23.59375 1.875,25 3.59375,25 L34.84375,25 C36.5625,25 37.96875,23.59375 37.96875,21.875 L37.96875,3.125 C37.96875,1.40625 36.5625,0 34.84375,0 Z",
     fill: "#f7f5f2"
-  })), React.createElement("symbol", {
+  })), /*#__PURE__*/React.createElement("symbol", {
     id: "generic",
     viewBox: "0 0 60 40"
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     d: "M60,35 C60,37.75 57.75,40 55,40 L5,40 C2.25,40 0,37.75 0,35 L0,5 C0,2.25 2.25,0 5,0 L55,0 C57.75,0 60,2.25 60,5 L60,35 Z",
     fill: "#302c43"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M58.281,1.469 C59.187,2.375 59.75,3.625 59.75,5 L59.75,20 L59.75,35 C59.75,36.375 59.188,37.625 58.281,38.531 C57.374,39.437 56.125,40 54.75,40 L29.75,40 L4.75,40 C3.375,40 2.125,39.438 1.219,38.531 L58.281,1.469 Z",
     fill: "#edecec",
     opacity: "0.08"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M55.0458326,1 C57.2536709,1 59.0491659,2.794 59.0491659,5 L59.0491659,35 C59.0491659,37.206 57.2536709,39 55.0458326,39 L5.0041666,39 C2.7963283,39 1.00083332,37.206 1.00083332,35 L1.00083332,5 C1.00083332,2.794 2.7963283,1 5.0041666,1 L55.0458326,1 Z M55.0458326,0 L5.0041666,0 C2.25187497,0 0,2.25 0,5 L0,35 C0,37.75 2.25187497,40 5.0041666,40 L55.0458326,40 C57.7981243,40 60.0499992,37.75 60.0499992,35 L60.0499992,5 C60.0499992,2.25 57.7981243,0 55.0458326,0 Z",
     fill: "#f8f8f9"
-  }), React.createElement("rect", {
+  }), /*#__PURE__*/React.createElement("rect", {
     fillOpacity: "0.25",
     fill: "#000",
     x: "40",
@@ -1383,28 +1395,28 @@ var CreditCardLogo = function CreditCardLogo(_ref) {
     width: "11",
     height: "8",
     rx: "1"
-  }), React.createElement("g", {
+  }), /*#__PURE__*/React.createElement("g", {
     fillOpacity: "0.735535553",
     fill: "#edecec"
-  }, React.createElement("rect", {
+  }, /*#__PURE__*/React.createElement("rect", {
     x: "9",
     y: "26",
     width: "9",
     height: "5",
     rx: "1"
-  }), React.createElement("rect", {
+  }), /*#__PURE__*/React.createElement("rect", {
     x: "20",
     y: "26",
     width: "9",
     height: "5",
     rx: "1"
-  }), React.createElement("rect", {
+  }), /*#__PURE__*/React.createElement("rect", {
     x: "31",
     y: "26",
     width: "9",
     height: "5",
     rx: "1"
-  }), React.createElement("rect", {
+  }), /*#__PURE__*/React.createElement("rect", {
     x: "42",
     y: "26",
     width: "9",
@@ -1414,12 +1426,10 @@ var CreditCardLogo = function CreditCardLogo(_ref) {
 };
 
 CreditCardLogo.propTypes = {
-  brand: PropTypes.string,
-  className: PropTypes.string
+  brand: PropTypes.string
 };
 CreditCardLogo.defaultProps = {
-  brand: 'generic',
-  className: null
+  brand: 'generic'
 };
 CreditCardLogo.__docgenInfo = {
   "description": "",
@@ -1436,17 +1446,6 @@ CreditCardLogo.__docgenInfo = {
       },
       "required": false,
       "description": ""
-    },
-    "className": {
-      "defaultValue": {
-        "value": "null",
-        "computed": false
-      },
-      "type": {
-        "name": "string"
-      },
-      "required": false,
-      "description": ""
     }
   }
 };
@@ -1456,7 +1455,7 @@ var s$7 = {"container":"styles-module_container__1c_LC","open":"styles-module_op
 var Dropdown = function Dropdown(_ref) {
   var isOpen = _ref.isOpen,
       children = _ref.children;
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: cn(s$7.container, isOpen && s$7.open)
   }, children);
 };
@@ -1504,13 +1503,13 @@ var Empty = function Empty(_ref) {
       className = _ref.className,
       otherProps = _objectWithoutProperties(_ref, ["heading", "description", "actions", "footer", "className"]);
 
-  return React.createElement("div", _extends({
+  return /*#__PURE__*/React.createElement("div", _extends({
     className: cn(className, s$8.container)
-  }, otherProps), React.createElement(Heading, {
+  }, otherProps), /*#__PURE__*/React.createElement(Heading, {
     as: "h3"
-  }, heading), description, actions && React.createElement("div", {
+  }, heading), description, actions && /*#__PURE__*/React.createElement("div", {
     className: s$8.actions
-  }, actions), footer && React.createElement("div", {
+  }, actions), footer && /*#__PURE__*/React.createElement("div", {
     className: s$8.footer
   }, footer));
 };
@@ -1585,16 +1584,16 @@ Empty.__docgenInfo = {
 var s$9 = {"container":"styles-module_container__3IJQ4","error":"styles-module_error__1lNQn","warning":"styles-module_warning__1pU-P","info":"styles-module_info__DlhKD","success":"styles-module_success__Qq1Pd","icon":"styles-module_icon__3_TZs","content":"styles-module_content__30nyW","closeBtn":"styles-module_closeBtn__3GTTc"};
 
 var icons = {
-  error: React.createElement(FiAlertTriangle, {
+  error: /*#__PURE__*/React.createElement(FiAlertTriangle, {
     className: s$9.icon
   }),
-  warning: React.createElement(FiZap, {
+  warning: /*#__PURE__*/React.createElement(FiZap, {
     className: s$9.icon
   }),
-  info: React.createElement(FiInfo, {
+  info: /*#__PURE__*/React.createElement(FiInfo, {
     className: s$9.icon
   }),
-  success: React.createElement(FiCheck, {
+  success: /*#__PURE__*/React.createElement(FiCheck, {
     className: s$9.icon
   })
 };
@@ -1642,19 +1641,19 @@ var Flash = function Flash(_ref) {
     setShow(false);
   };
 
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     "data-name": "flash",
     "data-alert": type,
     className: cn(className, s$9.container, s$9[type])
-  }, icons[type], React.createElement("span", {
+  }, icons[type], /*#__PURE__*/React.createElement("span", {
     className: s$9.content
-  }, children), isDismissable && React.createElement("button", {
+  }, children), isDismissable && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: handleClose,
     className: s$9.closeBtn,
     title: "Dismiss message",
     "aria-label": "close"
-  }, React.createElement(FiX, null)));
+  }, /*#__PURE__*/React.createElement(FiX, null)));
 };
 
 Flash.propTypes = {
@@ -1791,27 +1790,27 @@ var s$a = {"toast":"styles-module_toast__16nbR","error":"styles-module_error__27
 
 /* istanbul ignore file */
 var icons$1 = {
-  error: React.createElement(FiAlertTriangle, null),
-  warning: React.createElement(FiZap, null),
-  info: React.createElement(FiInfo, null),
-  success: React.createElement(FiCheck, null)
+  error: /*#__PURE__*/React.createElement(FiAlertTriangle, null),
+  warning: /*#__PURE__*/React.createElement(FiZap, null),
+  info: /*#__PURE__*/React.createElement(FiInfo, null),
+  success: /*#__PURE__*/React.createElement(FiCheck, null)
 };
 var Toast = function Toast(_ref) {
   var type = _ref.type,
       content = _ref.content,
       isClosable = _ref.isClosable,
       onClose = _ref.onClose;
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     "data-name": "alert",
     "data-alert": type,
     className: cn(s$a[type], s$a.toast)
-  }, icons$1[type], React.createElement("span", null, content), isClosable && React.createElement("button", {
+  }, icons$1[type], /*#__PURE__*/React.createElement("span", null, content), isClosable && /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: onClose,
     className: s$a.closeToast,
     title: "Dismiss message",
     "aria-label": "close"
-  }, React.createElement(FiX, null)));
+  }, /*#__PURE__*/React.createElement(FiX, null)));
 };
 Toast.propTypes = {
   type: PropTypes.oneOf(['error', 'warning', 'info', 'success']).isRequired,
@@ -1839,7 +1838,7 @@ var useToast = function useToast() {
     toaster.notify(function (_ref3) {
       var onClose = _ref3.onClose,
           id = _ref3.id;
-      return React.createElement(Toast, {
+      return /*#__PURE__*/React.createElement(Toast, {
         onClose: onClose,
         id: id,
         type: type,
@@ -1937,7 +1936,7 @@ var Form = function Form(_ref) {
       });
     }
   }, [isSuccess]);
-  return React.createElement("form", _extends({
+  return /*#__PURE__*/React.createElement("form", _extends({
     action: "",
     className: cn(className, s$b.form),
     onSubmit: handleSubmit
@@ -2042,7 +2041,7 @@ Form.__docgenInfo = {
 var Tooltip = function Tooltip(_ref) {
   var otherProps = _extends({}, _ref);
 
-  return React.createElement(Tippy, _extends({
+  return /*#__PURE__*/React.createElement(Tippy, _extends({
     arrow: true,
     placement: "right",
     flipBehavior: ['right', 'top'],
@@ -2064,11 +2063,11 @@ var InfoTooltip = function InfoTooltip(_ref) {
       content = _ref.content,
       otherProps = _objectWithoutProperties(_ref, ["className", "content"]);
 
-  return React.createElement(Tooltip, {
+  return /*#__PURE__*/React.createElement(Tooltip, {
     content: content
-  }, React.createElement("span", _extends({
+  }, /*#__PURE__*/React.createElement("span", _extends({
     className: cn(className, s$c.iconWrapper)
-  }, otherProps), React.createElement(FiInfo, {
+  }, otherProps), /*#__PURE__*/React.createElement(FiInfo, {
     className: s$c.icon
   })));
 };
@@ -2124,15 +2123,15 @@ var FormGroup = function FormGroup(_ref) {
       isHiddenLabel = _ref.isHiddenLabel,
       otherProps = _objectWithoutProperties(_ref, ["children", "className", "helperText", "helperInTooltip", "inputStyle", "label", "name", "isHiddenLabel"]);
 
-  return React.createElement("div", _extends({
+  return /*#__PURE__*/React.createElement("div", _extends({
     className: cn(className, inputStyle && s$d[inputStyle], s$d.formGroup)
-  }, otherProps), React.createElement("label", {
+  }, otherProps), /*#__PURE__*/React.createElement("label", {
     className: cn(isHiddenLabel && s$d.visuallyHidden, s$d.label),
     htmlFor: name
-  }, label, helperText && helperInTooltip && React.createElement(InfoTooltip, {
+  }, label, helperText && helperInTooltip && /*#__PURE__*/React.createElement(InfoTooltip, {
     content: helperText,
     className: "uMl1"
-  })), children, helperText && !helperInTooltip && React.createElement("div", {
+  })), children, helperText && !helperInTooltip && /*#__PURE__*/React.createElement("div", {
     className: s$d.helperText
   }, helperText));
 };
@@ -2261,7 +2260,7 @@ FormGroup.__docgenInfo = {
 
 var s$e = {"button":"styles-module_button__3rq1W","displayAsBlockElement":"styles-module_displayAsBlockElement__GCh4m","primary":"styles-module_primary__81J8A","secondary":"styles-module_secondary__W0v_L","primaryDestructive":"styles-module_primaryDestructive__ckqFg","secondaryDestructive":"styles-module_secondaryDestructive__1_cWv","primaryAlt":"styles-module_primaryAlt__2hzh2","google":"styles-module_google__1GcLq","okta":"styles-module_okta__17B68","github":"styles-module_github__2fXX2","small":"styles-module_small__wWA7Q","large":"styles-module_large__2aNbe","icon":"styles-module_icon__2esWq"};
 
-var IconButton = forwardRef(function (_ref, ref) {
+var IconButton = /*#__PURE__*/forwardRef(function (_ref, ref) {
   var type = _ref.type,
       ariaLabel = _ref.ariaLabel,
       buttonSize = _ref.buttonSize,
@@ -2274,7 +2273,7 @@ var IconButton = forwardRef(function (_ref, ref) {
 
   var btnClasses = cn(className, displayBlock && s$e.displayAsBlockElement, s$e[buttonStyle], s$e[buttonSize], s$e.button);
   var Icon = icon;
-  return React.createElement("button", _extends({
+  return /*#__PURE__*/React.createElement("button", _extends({
     // eslint-disable-line
     ref: ref,
     type: type,
@@ -2282,7 +2281,7 @@ var IconButton = forwardRef(function (_ref, ref) {
     title: ariaLabel,
     className: btnClasses,
     disabled: isDisabled
-  }, otherProps), React.createElement(Icon, {
+  }, otherProps), /*#__PURE__*/React.createElement(Icon, {
     className: s$e.icon
   }));
 });
@@ -2437,7 +2436,7 @@ IconButton.__docgenInfo = {
 
 var s$f = {"input":"styles-module_input__1me90","light":"styles-module_light__3dnng"};
 
-var Input = forwardRef(function (_ref, ref) {
+var Input = /*#__PURE__*/forwardRef(function (_ref, ref) {
   var name = _ref.name,
       type = _ref.type,
       inputStyle = _ref.inputStyle,
@@ -2445,7 +2444,7 @@ var Input = forwardRef(function (_ref, ref) {
       isDisabled = _ref.isDisabled,
       otherProps = _objectWithoutProperties(_ref, ["name", "type", "inputStyle", "className", "isDisabled"]);
 
-  return React.createElement("input", _extends({
+  return /*#__PURE__*/React.createElement("input", _extends({
     ref: ref,
     type: type,
     name: name,
@@ -2548,13 +2547,13 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
       setState = _useState2[1];
 
   var handleOnBlur = function handleOnBlur() {
-    setState(_objectSpread2({}, state, {
+    setState(_objectSpread2(_objectSpread2({}, state), {}, {
       showSuggestions: false
     }));
   };
 
   var handleOnFocus = function handleOnFocus() {
-    setState(_objectSpread2({}, state, {
+    setState(_objectSpread2(_objectSpread2({}, state), {}, {
       showSuggestions: true
     }));
   };
@@ -2578,7 +2577,7 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
     onChange(state.userInput);
   }, [state.userInput]);
   useEffect(function () {
-    setState(_objectSpread2({}, state, {
+    setState(_objectSpread2(_objectSpread2({}, state), {}, {
       userInput: value
     }));
   }, [value]);
@@ -2595,7 +2594,7 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
   var onKeyDown = function onKeyDown(e) {
     if (e.keyCode === 27) {
       // User pressed the esc key
-      setState(_objectSpread2({}, state, {
+      setState(_objectSpread2(_objectSpread2({}, state), {}, {
         showSuggestions: false
       }));
     } else if (e.keyCode === 13) {
@@ -2603,7 +2602,7 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
       e.preventDefault();
 
       if (state.showSuggestions) {
-        setState(_objectSpread2({}, state, {
+        setState(_objectSpread2(_objectSpread2({}, state), {}, {
           activeSuggestion: 0,
           showSuggestions: false,
           userInput: state.filteredSuggestions[state.activeSuggestion]
@@ -2612,21 +2611,21 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
     } else if (e.keyCode === 38) {
       // User pressed the up arrow
       if (state.activeSuggestion === 0) return;
-      setState(_objectSpread2({}, state, {
+      setState(_objectSpread2(_objectSpread2({}, state), {}, {
         activeSuggestion: state.activeSuggestion - 1
       }));
     } else if (e.keyCode === 40) {
       // User pressed the down arrow
       if (state.activeSuggestion - 1 === state.filteredSuggestions.length) return;
-      setState(_objectSpread2({}, state, {
+      setState(_objectSpread2(_objectSpread2({}, state), {}, {
         activeSuggestion: state.activeSuggestion + 1
       }));
     }
   };
 
-  return React.createElement("span", {
+  return /*#__PURE__*/React.createElement("span", {
     className: cn(className, s$g.wrapper)
-  }, React.createElement(Input, _extends({
+  }, /*#__PURE__*/React.createElement(Input, _extends({
     name: name,
     onFocus: handleOnFocus,
     onBlur: handleOnBlur,
@@ -2635,10 +2634,10 @@ var InputAutocomplete = function InputAutocomplete(_ref) {
     value: state.userInput,
     autoComplete: "off",
     isDisabled: isDisabled
-  }, otherProps)), state.showSuggestions && React.createElement("ul", {
+  }, otherProps)), state.showSuggestions && /*#__PURE__*/React.createElement("ul", {
     className: s$g.suggestions
   }, state.filteredSuggestions.map(function (suggestion, index) {
-    return React.createElement("li", {
+    return /*#__PURE__*/React.createElement("li", {
       // eslint-disable-line
       key: suggestion,
       className: cn(index === state.activeSuggestion && s$g.active, s$g.suggestion),
@@ -2737,14 +2736,14 @@ InputAutocomplete.__docgenInfo = {
 
 var KubesLogo = function KubesLogo(_ref) {
   var className = _ref.className;
-  return React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 700 700",
     className: className
-  }, React.createElement("path", {
+  }, /*#__PURE__*/React.createElement("path", {
     fill: "#326ce5",
     d: "M358.986 10.06a46.725 46.342 0 0 0-17.906 4.531L96.736 131.341a46.725 46.342 0 0 0-25.28 31.438l-60.282 262.25a46.725 46.342 0 0 0 6.344 35.531 46.725 46.342 0 0 0 2.656 3.688l169.125 210.28a46.725 46.342 0 0 0 36.531 17.438l271.219-.062a46.725 46.342 0 0 0 36.531-17.406l169.063-210.313a46.725 46.342 0 0 0 9.03-39.219L651.3 162.716a46.725 46.342 0 0 0-25.281-31.437L381.643 14.59a46.725 46.342 0 0 0-22.657-4.53z"
-  }), React.createElement("path", {
+  }), /*#__PURE__*/React.createElement("path", {
     d: "M361.408 99.307c-8.077.001-14.626 7.276-14.625 16.25 0 .138.028.27.03.406-.011 1.22-.07 2.689-.03 3.75.192 5.176 1.32 9.138 2 13.907 1.23 10.206 2.26 18.667 1.625 26.531-.62 2.965-2.803 5.677-4.75 7.562l-.344 6.188a190.337 190.337 0 0 0-26.438 4.062c-37.974 8.623-70.67 28.184-95.562 54.594a245.167 245.167 0 0 1-5.281-3.75c-2.612.353-5.25 1.159-8.688-.844-6.545-4.405-12.506-10.486-19.719-17.812-3.305-3.504-5.698-6.841-9.625-10.219-.891-.767-2.252-1.804-3.25-2.594-3.07-2.447-6.69-3.724-10.187-3.843-4.496-.154-8.824 1.604-11.656 5.156-5.036 6.315-3.424 15.968 3.593 21.562.071.057.147.101.219.157.964.781 2.145 1.783 3.031 2.437 4.167 3.077 7.973 4.652 12.125 7.094 8.747 5.402 15.999 9.88 21.75 15.281 2.246 2.394 2.639 6.613 2.938 8.438l4.687 4.187c-25.093 37.764-36.707 84.41-29.843 131.938l-6.125 1.781c-1.615 2.085-3.896 5.365-6.282 6.344-7.525 2.37-15.994 3.24-26.218 4.312-4.8.4-8.943.161-14.032 1.125-1.12.212-2.68.619-3.906.906l-.125.032c-.067.015-.155.048-.219.062-8.62 2.083-14.157 10.006-12.375 17.813 1.783 7.808 10.203 12.556 18.875 10.687.063-.014.154-.017.219-.031.098-.022.184-.07.281-.094 1.21-.265 2.724-.56 3.782-.843 5.003-1.34 8.626-3.308 13.125-5.032 9.676-3.47 17.691-6.37 25.5-7.5 3.26-.255 6.697 2.012 8.406 2.969l6.375-1.094c14.67 45.483 45.414 82.245 84.344 105.313l-2.657 6.375c.958 2.475 2.014 5.824 1.3 8.27-2.838 7.36-7.7 15.13-13.237 23.792-2.681 4.002-5.425 7.108-7.844 11.688-.579 1.096-1.316 2.78-1.875 3.937-3.759 8.043-1.002 17.305 6.219 20.782 7.266 3.497 16.284-.192 20.187-8.25.006-.012.026-.02.031-.032.004-.009-.004-.022 0-.03.556-1.143 1.344-2.645 1.813-3.72 2.072-4.747 2.762-8.815 4.219-13.406 3.87-9.72 5.995-19.919 11.322-26.274 1.459-1.74 3.837-2.41 6.303-3.07l3.312-6c33.938 13.027 71.927 16.523 109.875 7.907a189.77 189.77 0 0 0 25.094-7.563c.93 1.651 2.661 4.826 3.125 5.625 2.506.815 5.24 1.236 7.469 4.531 3.985 6.81 6.71 14.865 10.031 24.594 1.457 4.591 2.178 8.66 4.25 13.406.472 1.082 1.256 2.605 1.812 3.75 3.895 8.085 12.943 11.787 20.22 8.282 7.219-3.478 9.979-12.74 6.218-20.782-.559-1.158-1.327-2.841-1.906-3.937-2.42-4.58-5.163-7.655-7.844-11.656-5.537-8.662-10.13-15.858-12.969-23.22-1.187-3.796.2-6.157 1.125-8.624-.554-.635-1.739-4.22-2.437-5.906 40.457-23.889 70.298-62.022 84.312-106.063 1.893.298 5.182.88 6.25 1.094 2.2-1.45 4.222-3.344 8.188-3.031 7.808 1.129 15.823 4.03 25.5 7.5 4.498 1.723 8.121 3.723 13.125 5.062 1.057.283 2.572.547 3.781.813.097.023.183.071.281.093.066.015.156.017.219.032 8.672 1.866 17.094-2.88 18.875-10.688 1.78-7.807-3.754-15.732-12.375-17.812-1.254-.286-3.032-.77-4.25-1-5.09-.964-9.231-.727-14.031-1.125-10.225-1.072-18.694-1.943-26.219-4.313-3.068-1.19-5.251-4.841-6.313-6.344l-5.906-1.718c3.062-22.155 2.237-45.212-3.062-68.282-5.349-23.284-14.8-44.58-27.407-63.343 1.515-1.378 4.377-3.911 5.188-4.657.237-2.624.033-5.375 2.75-8.281 5.751-5.4 13.003-9.879 21.75-15.281 4.152-2.443 7.99-4.017 12.156-7.094.942-.696 2.23-1.798 3.219-2.594 7.015-5.596 8.63-15.248 3.594-21.562-5.037-6.314-14.797-6.91-21.813-1.313-.998.791-2.353 1.823-3.25 2.594-3.926 3.378-6.351 6.714-9.656 10.219-7.213 7.326-13.174 13.438-19.719 17.844-2.836 1.65-6.99 1.08-8.875.968l-5.562 3.969c-31.72-33.26-74.905-54.525-121.406-58.656-.13-1.949-.3-5.471-.344-6.532-1.904-1.821-4.204-3.376-4.781-7.312-.637-7.864.426-16.325 1.656-26.531.679-4.769 1.807-8.73 2-13.907.044-1.176-.027-2.884-.031-4.156-.001-8.974-6.548-16.25-14.625-16.25zm-18.313 113.438l-4.344 76.718-.312.157c-.292 6.863-5.94 12.343-12.875 12.343-2.841 0-5.463-.912-7.594-2.468l-.125.062-62.906-44.594c19.333-19.01 44.063-33.06 72.562-39.53a154.125 154.125 0 0 1 15.594-2.688zm36.656 0c33.274 4.092 64.045 19.159 87.625 42.25l-62.5 44.312-.218-.093c-5.548 4.051-13.364 3.046-17.688-2.375a12.807 12.807 0 0 1-2.812-7.47l-.063-.03zM232.126 283.62l57.438 51.375-.063.312c5.185 4.507 5.95 12.328 1.625 17.75a12.892 12.892 0 0 1-6.687 4.406l-.063.25-73.625 21.25c-3.747-34.265 4.329-67.573 21.375-95.343zm258.157.03c8.534 13.833 14.996 29.283 18.843 46.032 3.801 16.548 4.755 33.067 3.188 49.031l-74-21.312-.063-.313c-6.626-1.81-10.699-8.551-9.156-15.312a12.786 12.786 0 0 1 4.094-6.844l-.031-.156 57.125-51.125zm-140.657 55.313h23.532l14.625 18.282-5.25 22.812-21.125 10.156-21.188-10.187-5.25-22.813zm75.438 62.563c1-.05 1.995.04 2.969.219l.125-.157 76.156 12.875c-11.146 31.314-32.473 58.44-60.969 76.594l-29.562-71.406.093-.125c-2.715-6.31.002-13.71 6.25-16.719 1.6-.77 3.271-1.197 4.938-1.281zm-127.906.312c5.811.082 11.024 4.116 12.375 10.032.632 2.77.324 5.513-.72 7.937l.22.281-29.25 70.688c-27.348-17.549-49.13-43.824-60.782-76.063l75.5-12.812.125.156c.845-.155 1.701-.23 2.532-.219zm63.78 30.97a12.764 12.764 0 0 1 6.032 1.28c2.56 1.233 4.537 3.174 5.781 5.5h.282l37.218 67.25a154.256 154.256 0 0 1-14.875 4.157c-28.464 6.463-56.838 4.504-82.53-4.25l37.124-67.125h.063a12.91 12.91 0 0 1 10.906-6.813z",
     fill: "#fff",
     stroke: "#fff",
@@ -2821,7 +2820,7 @@ var NumberInput = function NumberInput(_ref) {
     updateValue(Number(e.target.value));
   };
 
-  return React.createElement("input", _extends({
+  return /*#__PURE__*/React.createElement("input", _extends({
     type: "number",
     name: name,
     value: value,
@@ -2976,13 +2975,13 @@ var RadioButtonGroup = function RadioButtonGroup(_ref) {
       _onChange = _ref.onChange,
       isDisabled = _ref.isDisabled,
       className = _ref.className;
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: cn(className, s$i.container)
   }, options.map(function (o) {
-    return React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: o.value,
       className: s$i.option
-    }, React.createElement("input", {
+    }, /*#__PURE__*/React.createElement("input", {
       type: "radio",
       id: o.value,
       name: name,
@@ -2994,7 +2993,7 @@ var RadioButtonGroup = function RadioButtonGroup(_ref) {
       className: s$i.input,
       disabled: isDisabled,
       "data-testid": name
-    }), React.createElement("label", {
+    }), /*#__PURE__*/React.createElement("label", {
       htmlFor: o.value,
       className: s$i.label
     }, o.label));
@@ -3095,11 +3094,11 @@ var SearchInput = function SearchInput(_ref) {
       isDisabled = _ref.isDisabled,
       otherProps = _objectWithoutProperties(_ref, ["name", "className", "isDisabled"]);
 
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: s$j.searchWrapper
-  }, React.createElement(FiSearch, {
+  }, /*#__PURE__*/React.createElement(FiSearch, {
     className: cn(isDisabled && s$j.disabled, s$j.searchIcon)
-  }), React.createElement(Input, _extends({
+  }), /*#__PURE__*/React.createElement(Input, _extends({
     type: "search",
     name: name,
     className: s$j.searchInput,
@@ -3163,16 +3162,16 @@ var Select = function Select(_ref) {
       isDisabled = _ref.isDisabled,
       otherProps = _objectWithoutProperties(_ref, ["inputStyle", "className", "placeholder", "children", "isDisabled"]);
 
-  return React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: cn(className, inputStyle, s$k.container)
-  }, React.createElement("select", _extends({
+  }, /*#__PURE__*/React.createElement("select", _extends({
     className: s$k.select,
     disabled: isDisabled
-  }, otherProps), placeholder && React.createElement("option", {
+  }, otherProps), placeholder && /*#__PURE__*/React.createElement("option", {
     value: ""
-  }, placeholder), children), React.createElement("span", {
+  }, placeholder), children), /*#__PURE__*/React.createElement("span", {
     className: s$k.iconWrapper
-  }, React.createElement(FiChevronDown, {
+  }, /*#__PURE__*/React.createElement(FiChevronDown, {
     className: s$k.icon
   })));
 };
@@ -3273,7 +3272,7 @@ var Slider = function Slider(_ref) {
     onChange(Number(e.target.value));
   };
 
-  return React.createElement("input", _extends({
+  return /*#__PURE__*/React.createElement("input", _extends({
     type: "range",
     name: name,
     value: value,
@@ -3400,11 +3399,11 @@ var StatusIndicator = function StatusIndicator(_ref) {
       className = _ref.className,
       otherProps = _objectWithoutProperties(_ref, ["status", "inFlight", "className"]);
 
-  return React.createElement("span", _extends({
+  return /*#__PURE__*/React.createElement("span", _extends({
     className: cn(className, inFlight && s$m.inFlight, s$m.container)
-  }, otherProps), React.createElement(FiCircle, {
+  }, otherProps), /*#__PURE__*/React.createElement(FiCircle, {
     className: cn(s$m[status], s$m.indicator)
-  }), inFlight && React.createElement(FiCircle, {
+  }), inFlight && /*#__PURE__*/React.createElement(FiCircle, {
     className: cn(s$m.secondDot, s$m[status], s$m.indicator)
   }));
 };
@@ -3487,13 +3486,13 @@ var Switch = function Switch(_ref) {
     onChange();
   };
 
-  return React.createElement("label", _extends({
+  return /*#__PURE__*/React.createElement("label", _extends({
     className: cn(isDisabled && s$n.disabled, s$n.label),
     htmlFor: name,
     onClick: function onClick() {
       return handleOnChange;
     }
-  }, otherProps), React.createElement("input", {
+  }, otherProps), /*#__PURE__*/React.createElement("input", {
     type: "checkbox",
     id: name,
     name: name,
@@ -3501,7 +3500,7 @@ var Switch = function Switch(_ref) {
     checked: isChecked,
     onChange: handleOnChange,
     disabled: isDisabled
-  }), React.createElement("span", {
+  }), /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true",
     className: s$n["switch"]
   }), label);
@@ -3584,7 +3583,7 @@ var TextArea = function TextArea(_ref) {
       isDisabled = _ref.isDisabled,
       otherProps = _objectWithoutProperties(_ref, ["name", "inputStyle", "className", "rows", "isDisabled"]);
 
-  return React.createElement("textarea", _extends({
+  return /*#__PURE__*/React.createElement("textarea", _extends({
     name: name,
     rows: rows,
     className: cn(className, s$o[inputStyle], s$o.textArea),
