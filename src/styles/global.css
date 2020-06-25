@@ -2,10 +2,6 @@
 @import 'variables.css';
 @import 'mixins.css';
 
-@import 'vendor/recharts.css';
-@import 'vendor/resteps.css';
-@import 'vendor/stripe.css';
-@import 'vendor/tippy.css';
-@import 'vendor/datepicker.css';
+@import './vendor/tippy.css';
 
 @import 'base.css';
