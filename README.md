@@ -1,4 +1,8 @@
-## Astronomer Spectra
+<div align="center">
+  <img src="https://www.astronomer.io/static/iconforLIGHTbackground.svg" width="250" height="100">
+</div>
+
+# Astronomer Spectra
 
 A design system for The Astronomer Platform, a managed service to run Apache Airflow on Kubernetes.
 
@@ -19,9 +23,8 @@ render () {
 }
 ```
 
----
 
-### Develop
+## Develop
 
 Clone the repository and use the package manager [yarn](https://yarnpkg.com) to install the project's dependancies.
 
@@ -35,17 +38,18 @@ Open Storybook at `http://localhost:51731/`.
 yarn start
 ```
 
----
 
-### Release Process
+## Release Process
 
-This package is automatically semantically versioned when merges are made to `master`.
-<br/>To bump a minor version run `yarn pkg-minor`.
-<br/>To bump a major version run `yarn pkg-major`.
+This package is automatically semantically versioned when merges are made to `main`.
 
----
+To bump a minor version run `yarn pkg-minor`.
 
-### Contributing
+To bump a major version run `yarn pkg-major`.
+
+
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-<br />Please make sure to update tests as appropriate.
+
+Please make sure to update tests as appropriate.
