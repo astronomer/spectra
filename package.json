@@ -1,6 +1,6 @@
 {
   "name": "@astronomer/spectra",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -14,10 +14,7 @@
     "url": "https://github.com/astronomer/spectra.git"
   },
   "scripts": {
-    "pkg-publish": "npm publish",
-    "pkg-major": "version major",
-    "pkg-minor": "version minor",
-    "pkg-patch": "version patch",
+    "prepublishOnly": "yarn build",
     "postpublish": "npm publish --ignore-scripts --@astronomer:registry='https://registry.npmjs.org'",
     "build": "rollup -c",
     "start": "start-storybook --docs",

@@ -35,12 +35,9 @@ yarn start
 
 ## Release Process
 
-This package is automatically semantically versioned when merges are made to `main`.
-
-To bump a minor version run `yarn pkg-minor`.
-
-To bump a major version run `yarn pkg-major`.
-
+1. Login to `npm` in your terminal.
+2. Manually bump the `version` in `package.json`.
+3. Run `npm publish` - this builds the new `/dist` and pushes to npm
 
 ## Contributing
 
