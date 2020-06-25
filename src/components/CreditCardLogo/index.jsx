@@ -83,7 +83,7 @@ const CreditCardLogo = ({ brand, ...otherProps }) => {
 };
 
 CreditCardLogo.propTypes = {
-  brand: PropTypes.oneOf(['american_express', 'visa', 'mastercard', 'discover', 'generic']),
+  brand: PropTypes.string,
 };
 
 CreditCardLogo.defaultProps = {
