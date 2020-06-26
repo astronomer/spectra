@@ -95,3 +95,6 @@ typings/
 
 # Folders
 public/
+
+# Publish directory
+/dist
