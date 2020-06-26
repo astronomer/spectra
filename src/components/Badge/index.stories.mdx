@@ -4,6 +4,7 @@ import Badge from '.';
 <Meta title="Components|Badge" component={Badge} />
 
 # Badge
+Simple item label. Ideal for 1-2 words, often indicating status.
 
 ### Import
 ```js
@@ -13,6 +14,13 @@ import { Badge } from '@astronomer/spectra';
 ### Usage
 <Preview>
   <Story name="Default">
+    <Badge text="Default" />
+  </Story>
+</Preview>
+
+### Badge Status
+<Preview>
+  <Story name="None">
     <Badge text="Default" />
   </Story>
   <Story name="Error">
