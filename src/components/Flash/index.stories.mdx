@@ -19,31 +19,26 @@ import { Flash } from '@astronomer/spectra';
   </Story>
 </Preview>
 
-#### Error
+#### Flash Type
 <Preview>
-  <Story name="Error">
-    <Flash type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+  <Story name="Type">
+    <div>
+      <Flash type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+      <br />
+      <Flash type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+      <br />
+      <Flash>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+      <br />
+      <Flash type="error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+    </div>
   </Story>
 </Preview>
 
-#### Info
-<Preview>
-  <Story name="Info">
-    <Flash type="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
-  </Story>
-</Preview>
-
-#### Success
-<Preview>
-  <Story name="Success">
-    <Flash type="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
-  </Story>
-</Preview>
-
-#### Is Dismissable
+#### Dismissable
+Adding `isDismissable` prop displays an "X" users can click to dismiss a Flash message. Add a `dismissKey` prop as well in order to persist the user's choice to dismiss in localStorage.
 <Preview>
   <Story name="Is Dissmissable">
-    <Flash dismissKey="warn123" isDismissable>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
+    <Flash isDismissable>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Flash>
   </Story>
 </Preview>
 

@@ -2,6 +2,8 @@ import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
 import FormGroup from '.';
 
+import Input from '../Input';
+
 <Meta title="Components|FormGroup" component={FormGroup} />
 
 # Form Group
@@ -13,11 +15,10 @@ import { FormGroup } from '@astronomer/spectra';
 
 ### Usage
 
-#### Default
 <Preview>
   <Story name="Default">
-    <FormGroup name="example">
-      [inputs]
+    <FormGroup name="example" label="Release Name" helperText="Only alphanumeric and hyphens allowed.">
+      <Input name="example" placeholder="metrics-dags-prod" />
     </FormGroup>
   </Story>
 </Preview>

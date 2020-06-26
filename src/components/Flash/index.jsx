@@ -96,5 +96,4 @@ Flash.defaultProps = {
   dismissKey: null,
 };
 
-
 export default Flash;
