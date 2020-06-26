@@ -13,9 +13,13 @@ import { StatusIndicator } from '@astronomer/spectra';
 
 ### Usage
 <Preview>
-  <Story name="Inflight">
-    <StatusIndicator status="neutral" inFlight />
+  <Story name="Default">
+    <StatusIndicator status="positive" />
   </Story>
+</Preview>
+
+### Status
+<Preview>
   <Story name="Positive">
     <StatusIndicator status="positive" />
   </Story>
@@ -30,6 +34,15 @@ import { StatusIndicator } from '@astronomer/spectra';
   </Story>
   <Story name="Inactive">
     <StatusIndicator status="inactive" />
+  </Story>
+</Preview>
+
+### Inflight
+Adding the `inFlight` prop causes the indicator to animate with a pulse—giving the user feedback that the status is in transition.
+
+<Preview>
+  <Story name="Inflight">
+    <StatusIndicator status="neutral" inFlight />
   </Story>
 </Preview>
 
