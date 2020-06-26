@@ -10,7 +10,7 @@ import astroTheme from './astroTheme';
 addParameters({
   options: {
     theme: astroTheme,
-    storySort: storySorter(['design', 'components', 'inputs', 'assets']),
+    storySort: storySorter(['design', 'components', 'assets']),
   },
   docs: {
     container: DocsContainer,
