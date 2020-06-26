@@ -2,6 +2,6 @@
 @import 'variables.css';
 @import 'mixins.css';
 
-@import './vendor/tippy.css';
+@import 'vendor/tippy.css';
 
 @import 'base.css';
