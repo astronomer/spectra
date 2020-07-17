@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { Link as GatsbyLink } from 'gatsby-link';
+import Link from 'gatsby-link';
 import cn from 'classnames';
 
 import LoadingDots from '../LoadingDots';
@@ -41,8 +41,6 @@ const Button = forwardRef(({
     s.button,
   );
 
-  const Link = gatsby ? GatsbyLink : ReactRouterLink;
-
   const renderButtonContents = () => (
     <>
       {iconLeft && <ButtonIcon icon={iconLeft} position="left" />}
@@ -52,15 +50,28 @@ const Button = forwardRef(({
   );
 
   if (type === 'internal') {
+    if (gatsby) {
+      return (
+        <Link
+          ref={ref}
+          to={to}
+          className={btnClasses}
+          {...otherProps}
+        >
+          {renderButtonContents()}
+        </Link>
+      );
+    }
+
     return (
-      <Link
+      <ReactRouterLink
         ref={ref}
         to={to}
         className={btnClasses}
         {...otherProps}
       >
         {renderButtonContents()}
-      </Link>
+      </ReactRouterLink>
     );
   }
 
