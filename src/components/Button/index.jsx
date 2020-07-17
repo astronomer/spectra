@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as GatsbyLink } from 'gatsby';
 import cn from 'classnames';
 
 import LoadingDots from '../LoadingDots';
@@ -29,6 +30,7 @@ const Button = forwardRef(({
   inFlight,
   displayBlock,
   className,
+  gatsby,
   ...otherProps
 }, ref) => {
   const btnClasses = cn(
@@ -38,6 +40,8 @@ const Button = forwardRef(({
     s[buttonSize],
     s.button,
   );
+
+  const Link = gatsby ? GatsbyLink : ReactRouterLink;
 
   const renderButtonContents = () => (
     <>
@@ -127,6 +131,7 @@ Button.propTypes = {
   inFlight: PropTypes.bool,
   className: PropTypes.string,
   displayBlock: PropTypes.bool,
+  gatsby: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -140,6 +145,7 @@ Button.defaultProps = {
   inFlight: false,
   className: null,
   displayBlock: false,
+  gatsby: false,
 };
 
 export default Button;
