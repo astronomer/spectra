@@ -20,17 +20,20 @@ render () {
 
 ## Develop
 
-Clone the repository and use the package manager [yarn](https://yarnpkg.com) to install the project's dependancies.
+Clone the repository and use the package manager [yarn](https://yarnpkg.com) to install the project's dependencies.
 
 ```bash
 yarn install
 ```
 
-Open Storybook at `http://localhost:51731/`.
+Run the project to view the components.
 
 ```bash
 yarn start
 ```
+
+Open Storybook at `http://localhost:51731/`.
+
 
 
 ## Release Process
