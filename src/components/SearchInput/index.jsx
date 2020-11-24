@@ -13,7 +13,7 @@ const SearchInput = ({
   isDisabled,
   ...otherProps
 }) => (
-  <div className={s.searchWrapper}>
+  <div className={cn(className, s.searchWrapper)}>
     <FiSearch className={cn(isDisabled && s.disabled, s.searchIcon)} />
     <Input
       type="search"
