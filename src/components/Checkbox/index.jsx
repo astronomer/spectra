@@ -8,12 +8,14 @@ const Checkbox = ({
   name,
   label,
   isChecked,
+  isIndeterminate,
   onChange,
   isDisabled,
+  className,
   ...otherProps
 }) => (
   <label
-    className={cn(isDisabled && s.disabled, s.label)}
+    className={cn(className, isDisabled && s.disabled, s.label)}
     htmlFor={name}
     {...otherProps}
   >
@@ -21,7 +23,13 @@ const Checkbox = ({
       type="checkbox"
       id={name}
       name={name}
-      className={cn(isChecked ? s.checked : s.unchecked, s.input)}
+      className={
+        cn(
+          isIndeterminate && s.isIndeterminate,
+          !isIndeterminate && isChecked ? s.checked : s.unchecked,
+          s.input,
+        )
+      }
       checked={isChecked}
       onChange={onChange}
       disabled={isDisabled}
@@ -42,14 +50,18 @@ Checkbox.propTypes = {
     PropTypes.array,
   ]).isRequired,
   isChecked: PropTypes.bool,
+  isIndeterminate: PropTypes.bool,
   onChange: PropTypes.func,
   isDisabled: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Checkbox.defaultProps = {
   isChecked: false,
+  isIndeterminate: false,
   onChange: null,
   isDisabled: false,
+  className: null,
 };
 
 export default Checkbox;
