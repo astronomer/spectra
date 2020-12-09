@@ -52,6 +52,20 @@ $input-dims: 1.25rem; /* width & height */
   cursor: not-allowed;
 }
 
+.input.isIndeterminate + .checkbox {
+  border-color: var(--c-input-border-color-focused);
+  background-color: var(--c-input-bg-color-focused);
+
+  &::before {
+    top: 7px;
+    width: 12px;
+    height: 2px;
+    border: 0;
+    background-color: var(--c-input-border-color-focused);
+    transform: none;
+  }
+}
+
 .input.checked + .checkbox {
   border-color: var(--c-input-border-color-focused);
   background-color: var(--c-input-bg-color-focused);
