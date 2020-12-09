@@ -9,7 +9,7 @@
   @include input;
 
   position: relative;
-  padding-right: 2.5rem;
+  padding-right: 1.5rem;
 
   &.light {
     background-color: var(--white11);
@@ -24,7 +24,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 2.5rem;
+  width: 1.5rem;
   height: 100%;
   z-index: 2;
   pointer-events: none;
@@ -40,6 +40,6 @@
 }
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: currentColor;
 }

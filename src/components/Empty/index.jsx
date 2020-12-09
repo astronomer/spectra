@@ -32,13 +32,14 @@ const Empty = ({
 
 Empty.propTypes = {
   heading: PropTypes.string.isRequired,
-  description: PropTypes.element.isRequired,
+  description: PropTypes.element,
   actions: PropTypes.element,
   footer: PropTypes.element,
   className: PropTypes.string,
 };
 
 Empty.defaultProps = {
+  description: null,
   actions: null,
   footer: null,
   className: null,

@@ -17,7 +17,7 @@ const RadioButtonGroup = ({
       <div key={o.value} className={s.option}>
         <input
           type="radio"
-          id={o.value}
+          id={`${name}-${o.value}`}
           name={name}
           value={o.value}
           onChange={() => onChange(o.value)}
@@ -26,7 +26,7 @@ const RadioButtonGroup = ({
           disabled={isDisabled}
           data-testid={name}
         />
-        <label htmlFor={o.value} className={s.label}>{o.label}</label>
+        <label htmlFor={`${name}-${o.value}`} className={s.label}>{o.label}</label>
       </div>
     ))}
   </div>
