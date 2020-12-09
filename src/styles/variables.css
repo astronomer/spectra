@@ -100,9 +100,9 @@
   --c-input-border-color-hover: color(var(--gray08));
   --c-input-border-color-focused: color(var(--blue10));
   --c-input-color: color(var(--c-text-description));
-  --c-input-bg-color: color(var(--white12));
-  --c-input-bg-color-hover: color(var(--white11));
-  --c-input-bg-color-focused: color(var(--white10));
+  --c-input-bg-color: color(var(--white11));
+  --c-input-bg-color-hover: color(var(--white10));
+  --c-input-bg-color-focused: color(var(--white09));
 
   /* Shadow */
   --shadow:
