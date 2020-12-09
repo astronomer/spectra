@@ -115,7 +115,6 @@ code {
   font-family: var(--font-mono);
   font-size: var(--font-s);
   padding: 0.5rem 0.75rem;
-  margin-bottom: 1rem;
 }
 
 pre {
