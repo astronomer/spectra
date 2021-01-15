@@ -91,9 +91,9 @@ const Button = forwardRef(({
   }
 
   return (
-    <button // eslint-disable-line
+    <button
       ref={ref}
-      type={type}
+      type={type} // eslint-disable-line
       className={btnClasses}
       disabled={isDisabled || inFlight}
       data-inflight={inFlight ? 'true' : null}

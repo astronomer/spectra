@@ -26,9 +26,9 @@ const IconButton = forwardRef(({
   const Icon = icon;
 
   return (
-    <button // eslint-disable-line
+    <button
       ref={ref}
-      type={type}
+      type={type} // eslint-disable-line
       aria-label={ariaLabel}
       title={ariaLabel}
       className={btnClasses}

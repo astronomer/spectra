@@ -33,5 +33,4 @@ Banner.defaultProps = {
   className: null,
 };
 
-
 export default Banner;
