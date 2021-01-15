@@ -33,7 +33,7 @@ export const Toast = ({
     className={cn(s[type], s.toast)}
   >
     {icons[type]}
-    <span>{content}</span>
+    <span className={s.content}>{content}</span>
     {isClosable && (
       <button
         type="button"
@@ -50,7 +50,12 @@ export const Toast = ({
 
 Toast.propTypes = {
   type: PropTypes.oneOf(['error', 'warning', 'info', 'success']).isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.object,
+    PropTypes.node,
+  ]).isRequired,
   isClosable: PropTypes.bool,
   onClose: PropTypes.func,
 };

@@ -5,6 +5,7 @@
   margin: 0 1rem 1rem 0;
   z-index: 9999;
   display: flex;
+  align-items: center;
   border: 1px solid transparent;
   background-color: var(--white10);
   color: var(--white10);
@@ -28,9 +29,20 @@
     background-color: var(--c-status-positive);
   }
 
-  & span {
-    margin-left: 0.5rem;
-    font-size: var(--font-s);
+  & > svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+
+.content {
+  flex: 1;
+  margin-left: 0.5rem;
+  font-size: var(--font-s);
+
+  & > a {
+    color: currentColor;
+    text-decoration: underline;
   }
 }
 
