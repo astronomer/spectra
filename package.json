@@ -61,7 +61,6 @@
     "postcss-math": "^0.0.10",
     "postcss-reporter": "^6.0.1",
     "react-is": "^16.12.0",
-    "react-router-dom": "^5.2.0",
     "react-test-renderer": "^16.12.0",
     "rollup": "^2.18.0",
     "rollup-plugin-babel": "^4.3.3",
@@ -79,7 +78,6 @@
   "dependencies": {
     "@tippy.js/react": "^3.1.1",
     "classnames": "^2.2.6",
-    "gatsby-link": "^2.4.13",
     "react-copy-to-clipboard": "^5.0.2",
     "react-icons": "^3.10.0",
     "react-spring": "^8.0.27",
@@ -88,8 +86,7 @@
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.2.0"
+    "react-dom": "^16.12.0"
   },
   "jest": {
     "moduleNameMapper": {
