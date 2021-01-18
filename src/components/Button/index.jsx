@@ -1,7 +1,5 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { Link as ReactRouterLink } from 'react-router-dom';
-import Link from 'gatsby-link';
 import cn from 'classnames';
 
 import LoadingDots from '../LoadingDots';
@@ -19,8 +17,8 @@ ButtonIcon.propTypes = {
 };
 
 const Button = forwardRef(({
+  as,
   type,
-  to,
   label,
   buttonSize,
   buttonStyle,
@@ -30,9 +28,10 @@ const Button = forwardRef(({
   inFlight,
   displayBlock,
   className,
-  gatsby,
   ...otherProps
 }, ref) => {
+  const Element = as;
+
   const btnClasses = cn(
     className,
     displayBlock && s.displayAsBlockElement,
@@ -49,51 +48,10 @@ const Button = forwardRef(({
     </>
   );
 
-  if (type === 'internal') {
-    if (gatsby) {
-      return (
-        <Link
-          ref={ref}
-          to={to}
-          className={btnClasses}
-          {...otherProps}
-        >
-          {renderButtonContents()}
-        </Link>
-      );
-    }
-
-    return (
-      <ReactRouterLink
-        ref={ref}
-        to={to}
-        className={btnClasses}
-        {...otherProps}
-      >
-        {renderButtonContents()}
-      </ReactRouterLink>
-    );
-  }
-
-  if (type === 'external') {
-    return (
-      <a
-        ref={ref}
-        href={to}
-        className={btnClasses}
-        target="_blank"
-        rel="noreferrer noopener"
-        {...otherProps}
-      >
-        {renderButtonContents()}
-      </a>
-    );
-  }
-
   return (
-    <button
+    <Element
       ref={ref}
-      type={type} // eslint-disable-line
+      type={as !== 'a' ? type : undefined}
       className={btnClasses}
       disabled={isDisabled || inFlight}
       data-inflight={inFlight ? 'true' : null}
@@ -108,21 +66,24 @@ const Button = forwardRef(({
           </span>
         </>
       )}
-    </button>
+    </Element>
   );
 });
 
 Button.displayName = 'Button';
 
 Button.propTypes = {
+  as: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func,
+    PropTypes.object,
+  ]),
   type: PropTypes.oneOf([
-    'internal',
-    'external',
     'button',
     'submit',
     'reset',
   ]),
-  to: PropTypes.string,
+  href: PropTypes.string,
   label: PropTypes.string.isRequired,
   buttonSize: PropTypes.oneOf(['small', 'large']),
   buttonStyle: PropTypes.oneOf([
@@ -142,12 +103,12 @@ Button.propTypes = {
   inFlight: PropTypes.bool,
   className: PropTypes.string,
   displayBlock: PropTypes.bool,
-  gatsby: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  to: null,
+  as: 'button',
   type: 'button',
+  href: null,
   buttonSize: null,
   buttonStyle: 'primary',
   iconLeft: null,
@@ -156,7 +117,6 @@ Button.defaultProps = {
   inFlight: false,
   className: null,
   displayBlock: false,
-  gatsby: false,
 };
 
 export default Button;
