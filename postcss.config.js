@@ -24,7 +24,7 @@ module.exports = {
     }),
     require('postcss-advanced-variables'),
     require('postcss-color-function')({ preserveCustomProps: true }),
-    require('postcss-cssnext')({ warnForDuplicates: false }),
+    require('postcss-cssnext')({ warnForDuplicates: false, features: { rem: false } }),
     require('postcss-for'),
     require('postcss-custom-media'),
     require('postcss-reporter')({ clearReportedMessages: true }),
