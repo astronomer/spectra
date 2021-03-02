@@ -33,8 +33,11 @@ const PLUGINS = [
     externalHelpers: true,
   }),
   postcss({
-    extract: false,
+    extract: true,
     modules: true,
+    inject: false,
+    namedExports: true,
+    minimize: true,
     plugins: [
       autoprefixer,
     ],
